@@ -1,0 +1,1280 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Productivity, Data &amp; Implementation Mastery for Telco Managers &amp; Leaders | Prepared for U Mobile</title>
+<meta name="description" content="Two 2-day hands-on AI programmes for telco teams by David Hooi: AI Productivity, Data &amp; Implementation Mastery for Managers &amp; Leaders, and AI Productivity &amp; Automation Mastery for Sales &amp; Operations. HRD Corp claimable.">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="D Action Consultancy &amp; Services Sdn Bhd">
+<meta property="og:locale" content="en_MY">
+<meta property="og:title" content="AI Mastery for U Mobile Teams">
+<meta property="og:description" content="Two 2-day hands-on programmes: Managers &amp; Leaders (data, dashboards, AI roadmap) and Sales &amp; Operations (reports, forecasts, AI assistants). HRD Corp claimable.">
+<meta property="og:image" content="https://dhooi266.github.io/ai-telco-umobile/og-share-v1.jpg">
+<meta property="og:image:secure_url" content="https://dhooi266.github.io/ai-telco-umobile/og-share-v1.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI Mastery for U Mobile Teams - Managers &amp; Leaders and Sales &amp; Operations programmes by trainer David Hooi, D Action Consultancy.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Mastery for U Mobile Teams">
+<meta name="twitter:description" content="Two 2-day hands-on AI programmes for telco managers and sales &amp; operations teams. HRD Corp claimable.">
+<meta name="twitter:image" content="https://dhooi266.github.io/ai-telco-umobile/og-share-v1.jpg">
+
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1c1c1e">
+<link rel="icon" href="assets/umobile-logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+
+<style>
+:root{
+  --green:#1c1c1e;
+  --green-2:#2c2c2f;
+  --green-soft:#fff1e4;
+  --orange:#ff7900;
+  --orange-2:#d96600;
+  --orange-soft:#fff3e8;
+  --ink:#1a1a1a;
+  --muted:#625d58;
+  --line:#e9e4df;
+  --bg:#ffffff;
+  --bg-2:#f8f6f3;
+  --card:#ffffff;
+  --radius:18px;
+  --shadow:0 1px 2px rgba(28,28,30,.06),0 10px 30px rgba(28,28,30,.07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Plus Jakarta Sans","Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+html[data-lang="zh"] body{font-family:"Noto Sans SC","Plus Jakarta Sans",system-ui,sans-serif;line-height:1.75}
+[data-lang="en"] .zh,[data-lang="zh"] .en{display:none !important}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.15;margin:0;letter-spacing:-.02em}
+html[data-lang="zh"] h1,html[data-lang="zh"] h2,html[data-lang="zh"] h3{letter-spacing:0;line-height:1.3}
+h2{font-size:clamp(28px,3.6vw,42px);font-weight:800}
+h3{font-size:19px;font-weight:700}
+p{margin:0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-2)}
+html[data-lang="zh"] .eyebrow{letter-spacing:.06em}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--orange)}
+.sec{padding:88px 0}
+.sec-head{max-width:720px;margin-bottom:44px}
+.sec-head p{color:var(--muted);margin-top:14px;font-size:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;border:2px solid transparent;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--orange);color:#fff}
+.btn-primary:hover{background:var(--orange-2)}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
+.nav .logo img{height:40px;width:auto}
+.nav-right{display:flex;align-items:center;gap:12px}
+.lang{display:flex;background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{border:0;background:transparent;font:inherit;font-size:14px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;color:var(--muted)}
+.lang button[aria-pressed="true"]{background:var(--green);color:#fff}
+.nav .btn{padding:10px 18px;font-size:14px}
+
+/* hero */
+.hero{background:radial-gradient(900px 500px at 85% 10%,rgba(255,121,0,.22),transparent 60%),linear-gradient(160deg,#121214 0%,#1c1c1e 55%,#2a2a2d 100%);color:#fff;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-top:72px;padding-bottom:72px}
+.hero .eyebrow{color:#ffa24d}
+.hero .eyebrow::before{background:#ffa24d}
+.hero h1{font-size:clamp(36px,5.2vw,62px);font-weight:800;margin:18px 0 20px}
+.hero h1 em{font-style:normal;color:#ffa24d}
+.hero h1 small{display:block;font-size:.44em;font-weight:700;color:rgba(255,255,255,.82);margin-top:12px;letter-spacing:0}
+html[data-lang="zh"] .hero h1 small{font-size:.34em;color:rgba(255,255,255,.62)}
+.hero .tagline{font-size:20px;font-weight:700;color:#fff;margin:0 0 14px;padding-left:14px;border-left:3px solid var(--orange)}
+.hero .lead{font-size:19px;color:rgba(255,255,255,.85);max-width:560px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.hero-tags span{font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18)}
+.hero-photo{position:relative;justify-self:center;width:100%;max-width:420px}
+.hero-photo .frame{border-radius:28px;overflow:hidden;background:#121214;box-shadow:0 30px 60px rgba(0,0,0,.35);aspect-ratio:4/4.8}
+.hero-photo .frame img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.hero-photo .badge{position:absolute;left:-26px;bottom:28px;background:#fff;color:var(--ink);border-radius:16px;padding:12px 16px;display:flex;gap:12px;align-items:center;box-shadow:0 14px 30px rgba(0,0,0,.25)}
+.hero-photo .badge{text-decoration:none;transition:transform .2s}
+.hero-photo .badge:hover{transform:translateY(-3px)}
+.hero-photo .badge img.av{width:54px;height:54px;border-radius:50%;object-fit:cover;object-position:top;border:3px solid var(--orange)}
+.hero-photo .badge strong{display:block;font-size:15px}
+.hero-photo .badge small{display:block;color:var(--muted);font-size:13px}
+.hero-photo .badge small:first-child{color:var(--orange-2);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+
+/* stats */
+.stats{background:var(--bg-2);border-bottom:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:30px 16px;text-align:center;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-size:clamp(28px,3.4vw,40px);font-weight:800;color:var(--green);line-height:1.1}
+.stat span{color:var(--muted);font-size:14px;font-weight:500}
+
+/* gains */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.card .ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--green-soft);color:var(--green);margin-bottom:18px}
+.card .ic svg{width:24px;height:24px}
+.card h3{margin-bottom:10px}
+.card p{color:var(--muted);font-size:16px}
+.card .tools{margin-top:14px;font-size:13px;font-weight:600;color:var(--green-2)}
+
+/* deliverables */
+.deliver{background:var(--green);color:#fff}
+.deliver .sec-head p{color:rgba(255,255,255,.78)}
+.deliver .eyebrow{color:#ffa24d}.deliver .eyebrow::before{background:#ffa24d}
+.dl{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;counter-reset:d}
+.dl li{list-style:none;display:flex;gap:18px;align-items:flex-start;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:22px}
+.dl li::before{counter-increment:d;content:counter(d,decimal-leading-zero);font-weight:800;font-size:15px;color:var(--green);background:#ffa24d;border-radius:10px;min-width:40px;height:40px;display:grid;place-items:center}
+.dl strong{display:block;font-size:18px;margin-bottom:4px}
+.dl span{color:rgba(255,255,255,.75);font-size:15px}
+.dl{padding:0;margin:0}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+.about-p{color:var(--muted);margin-top:16px;font-size:18px}
+.about-p b{color:var(--ink)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fact{background:var(--green);color:#fff;border-radius:var(--radius);padding:24px 20px;transition:transform .2s}
+.fact:nth-child(2),.fact:nth-child(3){background:var(--orange-soft);color:var(--ink)}
+.fact:hover{transform:translateY(-4px)}
+.fact b{display:block;font-size:40px;font-weight:800;line-height:1}
+.fact b small{font-size:.45em;margin-left:4px}
+.fact:nth-child(2) b,.fact:nth-child(3) b{color:var(--orange-2)}
+.fact span{display:block;margin-top:8px;font-size:15px;font-weight:600;opacity:.9}
+
+/* explorer */
+.explorer{background:var(--bg-2)}
+.rolefinder{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:28px}
+.rf-q{font-weight:700;margin-bottom:12px}
+.roles{display:flex;flex-wrap:wrap;gap:10px}
+.rf-q2{margin-top:20px}
+.ind{font:inherit;font-size:14px;font-weight:600;padding:8px 15px;border-radius:999px;border:1.5px dashed var(--line);background:var(--bg-2);color:var(--ink);cursor:pointer;transition:all .15s}
+.ind:hover{border-color:var(--orange);color:var(--orange-2)}
+.ind[aria-pressed="true"]{background:var(--orange);border:1.5px solid var(--orange);color:#fff}
+#rfInd li{background:var(--orange-soft);color:var(--orange-2)}
+#rfRole+#rfInd:not([hidden]){margin-top:18px}
+.role{font:inherit;font-size:15px;font-weight:600;padding:10px 18px;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;transition:all .15s}
+.role:hover{border-color:var(--green-2);color:var(--green)}
+.role[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.rf-out{margin-top:20px;padding-top:18px;border-top:1px dashed var(--line);animation:fade .35s ease}
+.rf-h{font-weight:700;color:var(--orange-2);margin-bottom:10px}
+.rf-out ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.rf-out li{background:var(--green-soft);border-radius:12px;padding:14px 16px;font-weight:600;font-size:15px;color:var(--green)}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.tabs button{position:relative;font:inherit;text-align:left;cursor:pointer;border:1.5px solid var(--line);background:#fff;border-radius:16px;padding:16px 20px;display:flex;flex-direction:column;gap:2px;color:var(--ink);transition:all .15s}
+.tabs button b{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-2)}
+.tabs button span{font-weight:700;font-size:17px}
+.tabs button[aria-selected="true"]{background:var(--green);border-color:var(--green);color:#fff;box-shadow:0 12px 28px rgba(28,28,30,.25)}
+.tabs button[aria-selected="true"] b{color:#ffa24d}
+.cnt{position:absolute;top:12px;right:14px;font-style:normal;font-size:12px;font-weight:800;background:var(--orange);color:#fff;border-radius:999px;padding:2px 9px;display:none}
+.cnt.on{display:block}
+.pane{display:grid;gap:12px;animation:fade .3s ease}
+.pane[hidden]{display:none}
+.mod{background:#fff;border:1.5px solid var(--line);border-radius:16px;overflow:hidden;transition:border-color .2s,box-shadow .2s,opacity .2s}
+.mod summary{list-style:none;display:flex;align-items:center;gap:16px;padding:18px 20px;cursor:pointer}
+.mod summary::-webkit-details-marker{display:none}
+.mod .mn{flex:none;width:46px;height:46px;border-radius:12px;background:var(--green-soft);color:var(--green);font-weight:800;display:grid;place-items:center;transition:background .2s,color .2s}
+.mod[open] .mn{background:var(--green);color:#fff}
+.mt{flex:1;min-width:0}
+.mt small{display:block;font-size:13px;font-weight:600;color:var(--muted)}
+.mt strong{font-size:18px;line-height:1.35}
+.rel{display:none;flex:none;font-size:12px;font-weight:800;color:#fff;background:var(--orange);padding:4px 10px;border-radius:999px}
+.chev{flex:none;width:12px;height:12px;border-right:2.5px solid var(--muted);border-bottom:2.5px solid var(--muted);transform:rotate(45deg);transition:transform .2s;margin:0 6px 6px 0}
+.mod[open] .chev{transform:rotate(-135deg);margin:6px 6px 0 0}
+.mb{padding:0 20px 20px 82px}
+.mb ul{margin:0 0 14px;padding-left:18px;color:var(--muted)}
+.mb li{margin:4px 0}
+.mb li b{color:var(--ink)}
+.ex{background:var(--orange-soft);border-radius:12px;padding:12px 16px;font-size:15px}
+.ex b{color:var(--orange-2)}
+.explorer.filtering .mod{opacity:.5}
+.explorer.filtering .mod.hl{opacity:1;border-color:var(--orange);box-shadow:0 10px 26px rgba(255,121,0,.15)}
+.mod.hl .rel{display:inline-block}
+@media (max-width:960px){.about-grid{grid-template-columns:1fr;gap:32px}.rf-out ul{grid-template-columns:1fr}}
+@media (max-width:640px){.mb{padding:0 16px 18px}.mod summary{padding:16px;gap:12px}.mod .mn{width:40px;height:40px}.mt strong{font-size:16px}.rel{display:none!important}.tabs button{padding:14px}.tabs button span{font-size:15px}.fact b{font-size:32px}}
+
+/* impact */
+.impact{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.imp{border-top:3px solid var(--orange);padding-top:20px}
+.imp h3{margin-bottom:8px}
+.imp p{color:var(--muted);font-size:16px}
+
+/* tools strip */
+.toolwall{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+.toolwall span{padding:9px 16px;border-radius:999px;background:var(--bg-2);border:1px solid var(--line);font-weight:600;font-size:15px}
+
+/* how */
+.how{background:var(--bg-2)}
+.how-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.steps{display:grid;gap:14px}
+.step{display:flex;gap:16px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+.step .n{flex:none;width:36px;height:36px;border-radius:50%;background:var(--orange-soft);color:var(--orange-2);font-weight:800;display:grid;place-items:center}
+.step h3{font-size:17px;margin-bottom:4px}
+.step p{color:var(--muted);font-size:15px}
+.mix{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.bar{display:flex;height:16px;border-radius:999px;overflow:hidden;margin:16px 0 10px}
+.bar i:first-child{background:var(--orange);width:70%}
+.bar i:last-child{background:var(--green);width:30%}
+.legend{display:flex;justify-content:space-between;font-size:14px;color:var(--muted);font-weight:600}
+.legend b{color:var(--ink)}
+.who{margin-top:28px}
+.who h3{margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:14px;font-weight:600;padding:7px 13px;border-radius:999px;background:var(--green-soft);color:var(--green)}
+
+/* trainer */
+.trainer-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.t-photo{position:relative}
+.t-photo img.main{border-radius:24px;width:100%;aspect-ratio:4/4.8;object-fit:cover;object-position:top;box-shadow:var(--shadow)}
+.t-photo .quote{position:absolute;right:-18px;bottom:-22px;background:var(--orange);color:#fff;font-weight:700;font-size:17px;line-height:1.35;padding:18px 20px;border-radius:16px;max-width:250px;box-shadow:0 14px 30px rgba(201,95,23,.35)}
+.trainer h2 small{font-size:.5em;color:var(--green-2);font-weight:700;margin-left:6px}
+.t-role{color:var(--orange-2);font-weight:700;margin:10px 0 22px}
+.trainer p.bio{color:var(--muted);margin-bottom:14px}
+.trainer p.bio b{color:var(--ink)}
+.creds{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:26px}
+.cred{display:flex;gap:12px;align-items:center;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--bg-2);font-weight:600;font-size:15px}
+.cred svg{width:22px;height:22px;color:var(--green);flex:none}
+
+/* brands */
+.brands{background:var(--bg-2);padding:72px 0}
+.brands .box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.brands img{margin:0 auto;max-height:560px;width:auto}
+.brands h2{text-align:center;margin-bottom:10px}
+.brands .sub{text-align:center;color:var(--muted);margin-bottom:28px}
+
+/* logo strip */
+.logostrip{padding:34px 0 30px;border-bottom:1px solid var(--line);overflow:hidden}
+.ls-title{text-align:center;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;align-items:center;gap:56px;width:max-content;animation:scroll 60s linear infinite}
+.track img{height:46px;width:auto;flex:none;mix-blend-mode:multiply}
+.marquee:hover .track{animation-play-state:paused}
+@keyframes scroll{to{transform:translateX(calc(-50% - 28px))}}
+.logogrid{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.logogrid div{flex:0 0 calc((100% - 6*14px)/7)}
+.logogrid div{height:96px;display:grid;place-items:center;border:1px solid var(--line);border-radius:14px;padding:14px;background:#fff;transition:transform .2s,box-shadow .2s}
+.logogrid div:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.logogrid img{max-height:62px;max-width:100%;width:auto;object-fit:contain;mix-blend-mode:multiply}
+@media (prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}.track img[aria-hidden]{display:none}}
+@media (max-width:960px){.logogrid div{flex-basis:calc((100% - 4*14px)/5)}}
+@media (max-width:640px){.track img{height:36px}.track{gap:40px}.logogrid{gap:10px}.logogrid div{flex-basis:calc((100% - 2*10px)/3)}.logogrid div{height:78px;padding:10px}}
+
+/* cta */
+.cta{background:radial-gradient(700px 400px at 90% 0%,rgba(255,121,0,.25),transparent 60%),var(--green);color:#fff;text-align:center}
+.cta h2{max-width:760px;margin:0 auto 16px}
+.cta p{color:rgba(255,255,255,.8);max-width:620px;margin:0 auto;font-size:18px}
+.cta .hero-cta{justify-content:center}
+.contact{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 32px;margin-top:36px;font-weight:600}
+.contact a{text-decoration:none;display:inline-flex;gap:8px;align-items:center;color:rgba(255,255,255,.9)}
+.contact a:hover{color:#ffa24d}
+.contact svg{width:18px;height:18px}
+footer{background:#121214;color:rgba(255,255,255,.6);font-size:14px;padding:28px 0}
+footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer .flogo{background:#fff;border-radius:12px;padding:8px 14px;display:inline-flex}
+footer .flogo img{height:38px;width:auto}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+.card,.step,.cred{transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:#ffd3a6;box-shadow:0 18px 40px rgba(28,28,30,.13)}
+.card:hover .ic{background:var(--green);color:#fff}
+.card .ic{transition:background .2s,color .2s}
+.step:hover{transform:translateX(4px)}
+.dl li{transition:background .2s}
+.dl li:hover{background:rgba(255,255,255,.11)}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}*{scroll-behavior:auto}}
+
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.wa-float svg{width:30px;height:30px;color:#fff}
+
+@media (max-width:960px){
+  .hero .wrap,.how-grid,.trainer-grid{grid-template-columns:1fr}
+  .hero-photo{max-width:360px}
+  .grid-3{grid-template-columns:1fr 1fr}
+  .impact{grid-template-columns:1fr 1fr}
+  .t-photo{max-width:420px}
+}
+@media (max-width:640px){
+  .sec{padding:64px 0}
+  .wrap{padding:0 16px}
+  .grid-3,.dl,.impact,.creds{grid-template-columns:1fr}
+  .stats .wrap{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .nav .btn{display:none}
+  .hero .wrap{padding-top:48px;padding-bottom:56px}
+  .hero-photo .badge{left:8px;bottom:12px}
+  .t-photo .quote{right:8px}
+  .hero-cta .btn{flex:1 1 100%}
+}
+/* --- additions for Social Media Content workshop --- */
+.tabs button span{line-height:1.3}
+.builds{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.build{position:relative;border-radius:var(--radius);padding:30px 26px 26px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;transition:transform .2s,box-shadow .2s}
+.build:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(28,28,30,.13)}
+.build::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:linear-gradient(90deg,var(--green),var(--orange))}
+.build .k{font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-2)}
+.build h3{font-size:22px;margin:8px 0 10px}
+.build p{color:var(--muted);font-size:16px}
+.build ul{margin:14px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.build li{font-size:13px;font-weight:600;padding:6px 11px;border-radius:999px;background:var(--green-soft);color:var(--green)}
+.build .vis{height:120px;margin:-6px -6px 20px;border-radius:12px;background:var(--bg-2);border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}
+.build .vis svg{width:100%;height:100%}
+/* 24/7 night shift timeline */
+.night{margin-top:34px;background:#111113;color:#fff;border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.night h3{color:#fff;font-size:21px;margin-bottom:6px}
+.night>p{color:rgba(255,255,255,.7);font-size:15px;margin-bottom:22px}
+.tl{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;position:relative}
+.tl::before{content:"";position:absolute;left:0;right:0;top:15px;height:2px;background:linear-gradient(90deg,#ffa24d,#ff9f45)}
+.tl div{position:relative;padding-top:38px}
+.tl div::before{content:"";position:absolute;top:8px;left:0;width:16px;height:16px;border-radius:50%;background:#111113;border:3px solid #ffa24d}
+.tl b{display:block;font-size:20px;font-weight:800;color:#ffa24d}
+.tl span{display:block;font-size:14.5px;color:rgba(255,255,255,.85);margin-top:4px;line-height:1.45}
+.tl div:last-child::before{background:#ffa24d}
+.honest{margin-top:22px;display:flex;gap:14px;align-items:flex-start;background:var(--orange-soft);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--ink)}
+.honest svg{flex:none;width:22px;height:22px;color:var(--orange-2);margin-top:2px}
+
+
+/* prompt lab */
+.anatomy{background:var(--bg-2)}
+.lab{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px}
+.lb-biz,.lb-fmt{font:inherit;font-size:14.5px;font-weight:600;padding:9px 16px;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;transition:all .15s}
+.lb-biz:hover,.lb-fmt:hover{border-color:var(--green);color:var(--green)}
+.lb-biz[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.lb-fmt[aria-pressed="true"]{background:var(--orange);border-color:var(--orange);color:#fff}
+.lab-cmp{display:grid;grid-template-columns:.85fr 1.15fr;gap:18px;margin-top:24px}
+.lab-col{border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.lab-col .tag{align-self:flex-start;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:5px 11px;border-radius:999px}
+.lab-col.weak{background:var(--bg-2);border:1.5px dashed var(--line)}
+.lab-col.weak .tag{background:#ece8e4;color:var(--muted)}
+.lab-col.strong{background:linear-gradient(160deg,#121214,#2a2a2d);color:#fff}
+.lab-col.strong .tag{background:rgba(255,121,0,.25);color:#ffa24d}
+.lab .pr{font-family:ui-monospace,Consolas,monospace;font-size:15px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--ink)}
+.pr-parts{margin:0;display:grid;gap:8px}
+.pr-parts div{display:grid;grid-template-columns:96px 1fr;gap:10px;align-items:baseline;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:9px 12px}
+.pr-parts dt{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#ffa24d}
+.pr-parts dd{margin:0;font-size:14.5px;color:rgba(255,255,255,.92);line-height:1.45}
+.outb{margin-top:auto}
+.outb b{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px;color:var(--muted)}
+.outb p{white-space:pre-line;font-size:15px;line-height:1.55;border-radius:12px;padding:14px 16px;margin:0}
+.weak .outb p{background:#fff;border:1px solid var(--line);color:var(--muted);font-style:italic}
+.strong .outb b{color:#ffa24d}
+.strong .outb p{background:#fff;color:var(--ink);box-shadow:0 10px 26px rgba(0,0,0,.18)}
+.where-n{margin-top:14px;font-size:13.5px;color:var(--muted);text-align:center}
+
+/* one idea -> every platform */
+.hub{display:grid;grid-template-columns:.8fr 1.2fr;gap:20px;align-items:stretch}
+.hub-core{background:linear-gradient(160deg,#d96600,#ff7900);color:#fff;border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:center}
+.hub-core .ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.18);margin-bottom:14px}
+.hub-core .ic svg{width:28px;height:28px}
+.hub-core .k{font-size:12.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#ffe2cc}
+.hub-core h3{color:#fff;font-size:24px;margin:6px 0 10px}
+.hub-core p{color:rgba(255,255,255,.9);font-size:15.5px}
+.hub-out{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.ch{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow);transition:transform .15s,border-color .15s}
+.ch:hover{transform:translateY(-3px);border-color:var(--orange)}
+.ch svg{flex:none;width:38px;height:38px;padding:8px;border-radius:11px;background:var(--green-soft);color:var(--green)}
+.ch b{display:block;font-size:16px}
+.ch span{display:block;font-size:14px;color:var(--muted);line-height:1.35}
+
+@media (max-width:960px){
+  .builds{grid-template-columns:1fr}
+  .lab-cmp,.hub{grid-template-columns:1fr}
+  .tl{grid-template-columns:1fr;gap:4px}
+  .tl::before{left:7px;right:auto;top:0;bottom:0;width:2px;height:auto;background:linear-gradient(180deg,#ffa24d,#ff9f45)}
+  .tl div{padding:4px 0 14px 34px}
+  .tl div::before{top:8px}
+}
+@media (max-width:560px){.hub-out{grid-template-columns:1fr}.pr-parts div{grid-template-columns:1fr;gap:2px}.lab{padding:18px}}
+.ch b span{display:inline;font-size:inherit;color:inherit}
+.weak .outb{margin-top:0}
+
+/* programme switcher (combined telco page) */
+.progbar{border-top:1px solid var(--line);background:rgba(246,249,247,.96)}
+.progbar .wrap{display:flex;align-items:center;gap:14px;height:auto;padding-top:8px;padding-bottom:8px}
+.progbar .pl{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.pswitch{display:grid;grid-template-columns:1fr 1fr;gap:8px;flex:1;max-width:760px}
+.pswitch button{font:inherit;cursor:pointer;text-align:left;border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:8px 14px;display:flex;flex-direction:column;line-height:1.25;transition:.2s}
+.pswitch button b{font-size:15px;font-weight:800;color:var(--ink,#1a1a1a)}
+.pswitch button small{font-size:12px;color:var(--muted);font-weight:600}
+.pswitch button:hover{border-color:var(--green)}
+.pswitch button[aria-selected="true"]{background:var(--green);border-color:var(--green);box-shadow:0 8px 20px rgba(28,28,30,.22)}
+.pswitch button[aria-selected="true"] b{color:#fff}
+.pswitch button[aria-selected="true"] small{color:#ffa24d}
+.prog[hidden]{display:none}
+@media (max-width:640px){.progbar .pl{display:none}.pswitch button{padding:7px 10px}.pswitch button b{font-size:13.5px}.pswitch button small{font-size:11px}}
+
+/* U Mobile edition */
+.nav .cobrand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.nav .cobrand .x{font-size:20px;font-weight:300;color:var(--muted)}
+.nav .cobrand img.um{height:42px}
+.hero .eyebrow{color:#ffa24d}
+.hero-tags .um-tag{background:#ff7900;border-color:#ff7900;color:#fff;font-weight:800}
+.hero-photo{position:relative}
+.um-stamp{position:absolute;top:18px;right:-10px;z-index:3;display:flex;align-items:center;gap:10px;background:#fff;color:#1a1a1a;border-radius:14px;padding:8px 14px 8px 10px;box-shadow:0 14px 30px rgba(0,0,0,.35)}
+.um-stamp img{height:40px;width:auto}
+.um-stamp span{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#625d58;line-height:1.3}
+.um-stamp b{display:block;font-size:17px;letter-spacing:0;text-transform:none;color:#ff7900}
+.hero{background:radial-gradient(900px 520px at 85% 8%,rgba(255,121,0,.30),transparent 60%),radial-gradient(600px 400px at 0% 100%,rgba(255,121,0,.12),transparent 60%),linear-gradient(160deg,#121214 0%,#1c1c1e 55%,#2a2a2d 100%)}
+@media (max-width:640px){.nav .cobrand{gap:8px}.nav .cobrand img{height:32px}.nav .cobrand img.um{height:34px}.um-stamp{right:8px;top:10px;padding:6px 10px 6px 8px}.um-stamp img{height:30px}.um-stamp b{font-size:14px}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.4 9.4 0 0 1-4.79-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.42 9.42 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43zm8.03-17.46A11.27 11.27 0 0 0 12.04.72C5.79.72.69 5.8.69 12.06c0 2 .52 3.95 1.52 5.67L.6 23.28l5.68-1.49a11.3 11.3 0 0 0 5.76 1.47h.01c6.25 0 11.34-5.09 11.35-11.35 0-3.03-1.18-5.88-3.33-8.03z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm-1 1 9 7 9-7"/></symbol>
+  <symbol id="i-web" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></g></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></g></symbol>
+  <symbol id="i-slides" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M12 16v4M8 20h8"/></g></symbol>
+  <symbol id="i-text" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 6h16M4 11h16M4 16h10"/></symbol>
+  <symbol id="i-img" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 9"/></g></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3 4 6v6c0 4.5 3.4 8.2 8 9 4.6-.8 8-4.5 8-9V6z"/></symbol>
+  <symbol id="i-bot" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4M9 14h.01M15 14h.01M2 13v3M22 13v3"/><circle cx="12" cy="3.5" r="1"/></g></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4zM20 4h-5a2 2 0 0 0-2 2"/><path d="M20 4v14h-5"/></g></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></g></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></g></symbol>
+</svg>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="logo cobrand" href="#top" aria-label="D Action Consultancy for U Mobile"><img src="assets/dac-logo.png" alt="DAC — Firing Up Growth"><span class="x" aria-hidden="true">×</span><img class="um" src="assets/umobile-logo.svg" alt="U Mobile"></a>
+    <div class="nav-right">
+      <a class="btn btn-primary" href="https://wa.me/60184043913" target="_blank" rel="noopener">Enquire now</a>
+    </div>
+  </div>
+  <div class="progbar">
+    <div class="wrap">
+      <span class="pl">U Mobile programmes</span>
+      <div class="pswitch" role="tablist" aria-label="Programme">
+        <button type="button" role="tab" data-prog="lead" aria-controls="prog-lead" aria-selected="true"><b>Managers &amp; Leaders</b><small>Data, decisions &amp; AI roadmap</small></button>
+        <button type="button" role="tab" data-prog="sales" aria-controls="prog-sales" aria-selected="false"><b>Sales &amp; Operations</b><small>Reports, dashboards &amp; AI assistants</small></button>
+      </div>
+    </div>
+  </div>
+</nav>
+<span id="top"></span>
+
+<div class="prog" id="prog-lead" data-pre="L-">
+<header class="hero" id="L-top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Prepared for U Mobile · 2-Day Leadership Programme · HRD Corp Claimable</span>
+      <h1>AI Productivity, Data &amp; Implementation Mastery for <em>Telco Managers &amp; Leaders</em><small>From network KPIs to board packs — lead your function with AI</small></h1>
+      <p class="tagline">Decide faster. Report sharper. Lead the AI shift in your team.</p>
+      <p class="lead">Telco leaders sit on more data than almost any industry — churn, ARPU, network KPIs, complaints, vendor SLAs — yet much of it still ends up in late-night slide decks. This hands-on programme shows managers how to turn that data into insight, dashboards and decisions with Generative AI, and leave with a prioritised AI implementation plan for their own function.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://wa.me/60184043913" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp David</a>
+        <a class="btn btn-ghost" href="#L-lab">Try the Leadership Prompt Lab</a>
+      </div>
+      <div class="hero-tags">
+        <span class="um-tag">Tailored for U Mobile</span>
+        <span>2-day in-house</span>
+        <span>Telco datasets &amp; scenarios</span>
+        <span>Dashboards &amp; data apps</span>
+        <span>AI implementation plan</span>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="frame"><img src="assets/hero-leaders.jpg" alt="Malaysian telco managers reviewing an AI-generated network and churn dashboard in an operations centre" width="900" height="1350"></div>
+      <div class="um-stamp"><img src="assets/umobile-logo.svg" alt=""><span>Prepared for<b>U Mobile</b></span></div>
+      <a class="badge" href="#trainer">
+        <img class="av" src="assets/david-hooi.jpg" alt="">
+        <div><small>Your trainer</small><strong>David Hooi</strong><small>HRD Corp Accredited Trainer</small></div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="stats" aria-label="Highlights">
+  <div class="wrap">
+    <div class="stat"><b>6,000+</b><span>professionals trained</span></div>
+    <div class="stat"><b>100+</b><span>companies served</span></div>
+    <div class="stat"><b>8</b><span>modules built on telco scenarios</span></div>
+    <div class="stat"><b>1</b><span>AI implementation plan per function</span></div>
+  </div>
+</section>
+
+<section class="logostrip" aria-label="Organisations trained">
+  <p class="ls-title">Trusted by teams at</p>
+  <div class="marquee"><div class="track"><img src="assets/logos/exxonmobil.png" alt="ExxonMobil"><img src="assets/logos/novartis.png" alt="Novartis"><img src="assets/logos/greateastern.png" alt="Great Eastern"><img src="assets/logos/rhb.png" alt="RHB"><img src="assets/logos/kwsp.png" alt="KWSP"><img src="assets/logos/tesla.png" alt="Tesla"><img src="assets/logos/intel.png" alt="Intel"><img src="assets/logos/electrolux.png" alt="Electrolux"><img src="assets/logos/tnb.png" alt="Tenaga Nasional"><img src="assets/logos/drbhicom.png" alt="DRB-HICOM"><img src="assets/logos/uobkayhian.png" alt="UOB Kay Hian"><img src="assets/logos/aon.png" alt="AON"><img src="assets/logos/haier.png" alt="Haier"><img src="assets/logos/sunway.png" alt="Sunway Medical Centre"><img src="assets/logos/nuskin.png" alt="Nu Skin"><img src="assets/logos/mubadala.png" alt="Mubadala Energy"><img src="assets/logos/proton.png" alt="Proton"><img src="assets/logos/kkmm.png" alt="KKMM"><img src="assets/logos/demant.png" alt="Demant"><img src="assets/logos/bsv.png" alt="BSV"><img src="assets/logos/menarini.png" alt="Menarini"><img src="assets/logos/jump.png" alt="Jump Retail"><img src="assets/logos/cid.png" alt="CID Realtors"><img src="assets/logos/kim.png" alt="KIM Realty"><img src="assets/logos/kbs.png" alt="KBS"><img src="assets/logos/ouji.png" alt="OUJI"><img src="assets/logos/exxonmobil.png" alt="" aria-hidden="true"><img src="assets/logos/novartis.png" alt="" aria-hidden="true"><img src="assets/logos/greateastern.png" alt="" aria-hidden="true"><img src="assets/logos/rhb.png" alt="" aria-hidden="true"><img src="assets/logos/kwsp.png" alt="" aria-hidden="true"><img src="assets/logos/tesla.png" alt="" aria-hidden="true"><img src="assets/logos/intel.png" alt="" aria-hidden="true"><img src="assets/logos/electrolux.png" alt="" aria-hidden="true"><img src="assets/logos/tnb.png" alt="" aria-hidden="true"><img src="assets/logos/drbhicom.png" alt="" aria-hidden="true"><img src="assets/logos/uobkayhian.png" alt="" aria-hidden="true"><img src="assets/logos/aon.png" alt="" aria-hidden="true"><img src="assets/logos/haier.png" alt="" aria-hidden="true"><img src="assets/logos/sunway.png" alt="" aria-hidden="true"><img src="assets/logos/nuskin.png" alt="" aria-hidden="true"><img src="assets/logos/mubadala.png" alt="" aria-hidden="true"><img src="assets/logos/proton.png" alt="" aria-hidden="true"><img src="assets/logos/kkmm.png" alt="" aria-hidden="true"><img src="assets/logos/demant.png" alt="" aria-hidden="true"><img src="assets/logos/bsv.png" alt="" aria-hidden="true"><img src="assets/logos/menarini.png" alt="" aria-hidden="true"><img src="assets/logos/jump.png" alt="" aria-hidden="true"><img src="assets/logos/cid.png" alt="" aria-hidden="true"><img src="assets/logos/kim.png" alt="" aria-hidden="true"><img src="assets/logos/kbs.png" alt="" aria-hidden="true"><img src="assets/logos/ouji.png" alt="" aria-hidden="true"></div></div>
+</section>
+
+<section class="sec about" id="L-about">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow">About the programme</span>
+      <h2 style="margin-top:14px">Built for the people who run the network, the customer and the P&amp;L</h2>
+      <p class="about-p"><b>AI Productivity, Data &amp; Implementation Mastery</b> equips telco managers to apply Generative AI across network operations, customer experience, commercial performance and leadership decision-making. <b>Day 1</b> builds AI fluency, prompting and leadership productivity — from outage summaries to board-ready slides. <b>Day 2</b> moves into knowledge, data analysis, dashboards and a practical AI roadmap for each participant's function.</p>
+      <p class="about-p">Every exercise uses telco scenarios: churn and ARPU analysis, network incident reports, complaint data, regulatory briefings and field-ops performance. AI does the heavy lifting; leaders bring the judgement, context and accountability that turn insight into action.</p>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>2</b><span>days, fully hands-on</span></div>
+      <div class="fact"><b>8</b><span>modules incl. an implementation workshop</span></div>
+      <div class="fact"><b>5</b><span>AI platforms compared on telco tasks</span></div>
+      <div class="fact"><b>HRD<small>Corp</small></b><span>claimable</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="L-outcomes">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What every leader leaves with</span>
+      <h2 style="margin-top:14px">Insight you can act on Monday — and a plan for the next 12 months</h2>
+      <p>Not theory about AI. Participants build real management outputs from telco-style data, then plan how their own team will adopt AI safely.</p>
+    </div>
+    <div class="builds">
+      <article class="build">
+        <div class="vis" aria-hidden="true"><svg viewBox="0 0 300 120"><rect x="20" y="14" width="260" height="96" rx="10" fill="#fff" stroke="#e9e4df"/><rect x="34" y="26" width="110" height="72" rx="6" fill="#1c1c1e"/><rect x="44" y="36" width="60" height="7" rx="3.5" fill="#ffa24d"/><rect x="44" y="50" width="88" height="5" rx="2.5" fill="rgba(255,255,255,.5)"/><rect x="44" y="60" width="80" height="5" rx="2.5" fill="rgba(255,255,255,.5)"/><rect x="44" y="70" width="70" height="5" rx="2.5" fill="rgba(255,255,255,.5)"/><g fill="#fff1e4"><rect x="156" y="26" width="52" height="34" rx="5"/><rect x="214" y="26" width="52" height="34" rx="5"/><rect x="156" y="64" width="52" height="34" rx="5"/></g><rect x="214" y="64" width="52" height="34" rx="5" fill="#ff7900"/><path d="m166 50 10-8 10 4 12-10" fill="none" stroke="#1c1c1e" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+        <span class="k">Outcome 1 · Leadership Productivity</span>
+        <h3>Board-ready reports in a fraction of the time</h3>
+        <p>Executive summaries, incident and RCA briefs, stakeholder updates and a 5-slide management deck — produced from raw performance packs with AI.</p>
+        <ul><li>COSTAR prompts</li><li>Gamma &amp; Napkin AI</li><li>Board packs</li></ul>
+      </article>
+      <article class="build">
+        <div class="vis" aria-hidden="true"><svg viewBox="0 0 300 120"><rect x="20" y="14" width="260" height="96" rx="10" fill="#fff" stroke="#e9e4df"/><g fill="#fff1e4"><rect x="32" y="24" width="56" height="22" rx="5"/><rect x="94" y="24" width="56" height="22" rx="5"/><rect x="156" y="24" width="56" height="22" rx="5"/></g><rect x="218" y="24" width="50" height="22" rx="5" fill="#fff3e8"/><rect x="40" y="31" width="26" height="8" rx="4" fill="#1c1c1e"/><rect x="102" y="31" width="30" height="8" rx="4" fill="#1c1c1e"/><rect x="164" y="31" width="22" height="8" rx="4" fill="#ff7900"/><g fill="#1c1c1e"><rect x="40" y="76" width="14" height="24" rx="2"/><rect x="60" y="66" width="14" height="34" rx="2"/><rect x="80" y="58" width="14" height="42" rx="2"/></g><rect x="100" y="70" width="14" height="30" rx="2" fill="#ff7900"/><path d="m140 92 26-18 22 8 30-26 26 12" fill="none" stroke="#ff9f45" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="218" cy="56" r="4.5" fill="#ff7900"/></svg></div>
+        <span class="k">Outcome 2 · Data &amp; Dashboards</span>
+        <h3>A churn or network-performance dashboard</h3>
+        <p>Analyse an anonymised telco dataset, find the root causes, then build an interactive dashboard and a one-page infographic of findings and recommendations.</p>
+        <ul><li>Churn &amp; ARPU</li><li>Network KPIs</li><li>AI-built data app</li></ul>
+      </article>
+      <article class="build">
+        <div class="vis" aria-hidden="true"><svg viewBox="0 0 300 120"><rect x="20" y="14" width="260" height="96" rx="10" fill="#111113"/><path d="M44 62h212" stroke="rgba(255,255,255,.2)" stroke-width="2"/><circle cx="66" cy="62" r="11" fill="#ff7900"/><circle cx="150" cy="62" r="11" fill="#ff9f45"/><circle cx="234" cy="62" r="11" fill="#2a2a2d" stroke="#ffa24d" stroke-width="2"/><rect x="44" y="84" width="44" height="7" rx="3.5" fill="#ffa24d"/><rect x="128" y="84" width="44" height="7" rx="3.5" fill="rgba(255,255,255,.4)"/><rect x="212" y="84" width="44" height="7" rx="3.5" fill="rgba(255,255,255,.4)"/><rect x="50" y="30" width="32" height="6" rx="3" fill="rgba(255,255,255,.55)"/><rect x="134" y="30" width="32" height="6" rx="3" fill="rgba(255,255,255,.55)"/><rect x="218" y="30" width="32" height="6" rx="3" fill="rgba(255,255,255,.55)"/></svg></div>
+        <span class="k">Outcome 3 · AI Roadmap</span>
+        <h3>A prioritised AI implementation plan</h3>
+        <p>Use cases for your own function with business problem, data, tools and expected benefit — sequenced into quick wins, mid-term and longer-term initiatives with governance checkpoints.</p>
+        <ul><li>0–3–6–12 months</li><li>PDPA-aware</li><li>Pilot-ready</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec anatomy" id="L-lab">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Leadership Prompt Lab</span>
+      <h2 style="margin-top:14px">One line in. Management-ready out.</h2>
+      <p>Most leaders type a one-line request and get a generic answer back. Module 2 teaches the COSTAR framework so AI understands the context, the audience and the decision at stake. Pick a leadership task to see the difference.</p>
+    </div>
+    <div class="lab">
+      <div class="lab-pick">
+        <p class="rf-q">Choose a leadership task</p>
+        <div class="roles" role="group" aria-label="Leadership task">
+          <button type="button" class="lb-biz" data-k="outage" aria-pressed="true">Outage summary for management</button>
+          <button type="button" class="lb-biz" data-k="churn" aria-pressed="false">Churn insight for EXCO</button>
+          <button type="button" class="lb-biz" data-k="advisory" aria-pressed="false">Planned-maintenance customer advisory</button>
+          <button type="button" class="lb-biz" data-k="vendor" aria-pressed="false">Vendor proposal comparison</button>
+        </div>
+      </div>
+      <div class="lab-cmp" aria-live="polite">
+        <div class="lab-col weak">
+          <span class="tag">Typical prompt</span>
+          <p class="pr" id="L-labWeak"></p>
+          <div class="outb"><b>Typical result</b><p id="L-labWeakOut"></p></div>
+        </div>
+        <div class="lab-col strong">
+          <span class="tag">COSTAR prompt</span>
+          <dl class="pr-parts" id="L-labParts"></dl>
+          <div class="outb"><b>Sample AI draft</b><p id="L-labOut"></p></div>
+        </div>
+      </div>
+    </div>
+    <p class="where-n">Illustrative examples written for this page; figures are fictional. In class, participants run these prompts on anonymised telco-style data and refine the output.</p>
+  </div>
+</section>
+
+<section class="sec" id="L-repurpose">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">One data pack, every audience</span>
+      <h2 style="margin-top:14px">Turn the monthly performance pack into decisions</h2>
+      <p>Modules 4 to 7 show how a single raw pack — network KPIs, complaints and sales — becomes the right output for every stakeholder, in hours instead of days.</p>
+    </div>
+    <div class="hub">
+      <div class="hub-core">
+        <div class="ic"><svg><use href="#i-chart"/></svg></div>
+        <span class="k">One raw pack</span>
+        <h3>"October network, complaints &amp; sales"</h3>
+        <p>Spreadsheets and reports from network, CX and commercial — AI cleans, analyses and reshapes them for each audience.</p>
+      </div>
+      <div class="hub-out">
+        <div class="ch"><svg><use href="#i-text"/></svg><div><b>Board / EXCO</b><span>One-page executive summary &amp; decisions needed</span></div></div>
+        <div class="ch"><svg><use href="#i-slides"/></svg><div><b>Management review</b><span>5-slide storyline deck via Gamma</span></div></div>
+        <div class="ch"><svg><use href="#i-chart"/></svg><div><b>Dashboard</b><span>Interactive churn &amp; site-performance view</span></div></div>
+        <div class="ch"><svg><use href="#i-img"/></svg><div><b>Infographic</b><span>Key findings on one visual poster</span></div></div>
+        <div class="ch"><svg><use href="#i-users"/></svg><div><b>Frontline teams</b><span>Plain-language brief &amp; action items</span></div></div>
+        <div class="ch"><svg><use href="#i-shield"/></svg><div><b>Regulator</b><span>Structured, factual submission draft</span></div></div>
+      </div>
+    </div>
+
+    <div class="night">
+      <h3>From workshop to working AI — the roadmap you build in Module 8</h3>
+      <p>Every participant leaves with initiatives sequenced like this, with owners, data, tools and success metrics.</p>
+      <div class="tl">
+        <div><b>Day 2</b><span>Map pain points: repetitive reports, ticket triage, complaint categorisation, reconciliation.</span></div>
+        <div><b>Week 2</b><span>Pick 1–2 use cases; confirm data, tools and IT / PDPA approval.</span></div>
+        <div><b>0–3 months</b><span>Quick wins: AI-drafted daily reports, meeting actions, briefing packs.</span></div>
+        <div><b>3–6 months</b><span>Mid-term: shared dashboards, knowledge base for frontline and support teams.</span></div>
+        <div><b>6–12 months</b><span>Longer-term: data apps and AI assistants embedded in team workflows.</span></div>
+      </div>
+    </div>
+    <div class="honest"><svg><use href="#i-info"/></svg><span>AI informs — leaders decide. The programme covers hallucination, accuracy checks and responsible use of customer data, PDPA obligations and network-sensitive information. Exercises use anonymised telco-style datasets, and we confirm which AI tools your IT policy allows before Day 1.</span></div>
+  </div>
+</section>
+
+<section class="sec explorer" id="L-programme">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Explore the programme</span>
+      <h2 style="margin-top:14px">Day 1 to lead with AI. Day 2 to lead with data.</h2>
+      <p>Pick your function to see which modules matter most and what you could change with AI. Open any module for the details.</p>
+    </div>
+
+    <div class="rolefinder">
+      <p class="rf-q">I lead…</p>
+      <div class="roles" role="group" aria-label="Function">
+        <button type="button" class="role" data-role="net" aria-pressed="false">Network Ops &amp; Engineering</button>
+        <button type="button" class="role" data-role="cx" aria-pressed="false">Customer Experience &amp; Contact Centre</button>
+        <button type="button" class="role" data-role="com" aria-pressed="false">Commercial, Marketing &amp; Product</button>
+        <button type="button" class="role" data-role="ent" aria-pressed="false">Enterprise &amp; B2B Sales</button>
+        <button type="button" class="role" data-role="retail" aria-pressed="false">Retail, Channel &amp; Dealers</button>
+        <button type="button" class="role" data-role="field" aria-pressed="false">Field Ops &amp; Rollout</button>
+        <button type="button" class="role" data-role="corp" aria-pressed="false">Finance, Regulatory, Legal &amp; HR</button>
+      </div>
+      <div class="rf-out" id="L-rfOut" hidden>
+        <div id="L-rfRole" hidden>
+          <p class="rf-h">For your function, what you could do with AI:</p>
+          <ul id="L-rfWins"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Programme days">
+      <button type="button" role="tab" id="L-tab-d1" aria-controls="L-pane-d1" aria-selected="true"><b>Day 1</b><span>AI Foundations, Prompting &amp; Leadership Productivity</span><i class="cnt" data-cnt="d1"></i></button>
+      <button type="button" role="tab" id="L-tab-d2" aria-controls="L-pane-d2" aria-selected="false"><b>Day 2</b><span>Knowledge, Data, Dashboards &amp; Implementation</span><i class="cnt" data-cnt="d2"></i></button>
+    </div>
+    <div class="pane" id="L-pane-d1" role="tabpanel" aria-labelledby="L-tab-d1">
+          <details class="mod" data-mod="m0">
+            <summary><span class="mn">00</span><span class="mt"><small>9:00 – 9:40</small><strong>Introduction, Icebreaker &amp; Pre-Assessment</strong></span><span class="rel">For your function</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>Programme introduction and learning objectives</li><li>Introductions by function: network, CX, commercial, enterprise, support</li><li>Current AI usage and leadership challenges in the business</li><li>Pre-training baseline: AI knowledge, confidence, prompt-writing and team adoption level</li></ul>
+            </div>
+          </details>
+          <details class="mod" data-mod="m1" open>
+            <summary><span class="mn">M1</span><span class="mt"><small>9:40 – 10:45</small><strong>AI in the Telco Business</strong></span><span class="rel">For your function</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>Artificial Intelligence and Generative AI explained for leaders</li><li>How AI is reshaping telco: AI-assisted network operations, predictive maintenance, self-service care, personalised offers, fraud detection</li><li>Capabilities and limitations of Generative AI</li><li>Hallucination, accuracy and responsible use: <b>customer data, PDPA</b>, network-sensitive and confidential information</li></ul>
+              <p class="ex"><b>Exercise:</b> map AI opportunities in your own function's daily and weekly work.</p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m2">
+            <summary><span class="mn">M2</span><span class="mt"><small>11:00 – 12:15</small><strong>Prompt Engineering for Telco Leaders</strong></span><span class="rel">For your function</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>What makes an effective prompt: context, instructions and constraints</li><li>The <b>COSTAR</b> prompting framework</li><li>Controlling tone and audience: customers, frontline staff, management, board, regulator</li><li>Iterative prompting and refining outputs</li></ul>
+              <p class="ex"><b>Exercise:</b> turn "summarise last night's outage for management" into a structured COSTAR prompt and compare the results.</p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m3">
+            <summary><span class="mn">M3</span><span class="mt"><small>12:15 – 1:00</small><strong>Choosing the Right LLM</strong></span><span class="rel">For your function</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>Comparing ChatGPT, Claude, Google Gemini, Microsoft Copilot and DeepSeek</li><li>Strengths by task: research, analysis, long technical documents, content, reasoning</li><li>Enterprise considerations: data residency, privacy settings and approved-tool policies</li></ul>
+              <p class="ex"><b>Exercise:</b> run the same telco task — a customer advisory for planned maintenance — across platforms and compare quality.</p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m4">
+            <summary><span class="mn">M4</span><span class="mt"><small>2:00 – 4:45</small><strong>AI for Leadership Productivity &amp; Executive Presentations</strong></span><span class="rel">For your function</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>Draft and improve emails, escalations and stakeholder updates</li><li>Summarise incident reports, RCAs, vendor proposals and RFP responses</li><li>Executive summaries for management and board packs</li><li>Meeting notes from war rooms, ops and sales reviews into action items with owners</li><li>Business cases, proposals, regulatory submissions and service-disruption communications</li><li>Gamma and Napkin AI for presentations and diagrams; simplifying technical network information for non-technical audiences</li></ul>
+              <p class="ex"><b>Exercise:</b> turn a raw monthly performance pack (network KPIs, complaints, sales) into a 5-slide management-ready presentation.</p>
+            </div>
+          </details>
+          <details class="mod" data-mod="r1">
+            <summary><span class="mn">✓</span><span class="mt"><small>4:45 – 5:00</small><strong>Day 1 Reflection</strong></span><span class="rel">For your function</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb"><ul><li>Key learning recap, Q&amp;A and participant sharing</li></ul></div>
+          </details>
+    </div>
+    <div class="pane" id="L-pane-d2" role="tabpanel" aria-labelledby="L-tab-d2" hidden>
+          <details class="mod" data-mod="m5" open>
+            <summary><span class="mn">M5</span><span class="mt"><small>9:15 – 10:30</small><strong>AI for Telco Knowledge Management</strong></span><span class="rel">For your function</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>Managing scattered information: vendor manuals, SOPs, network change records, tariff sheets, policy and regulatory documents</li><li>Summarising and comparing documents: vendor proposals, competitor plans, regulatory consultations</li><li>Extracting key terms, SLAs and obligations from contracts</li><li>Working with PDF, Word, Excel, web content, call recordings and video</li><li><b>NotebookLM, Gemini and Microsoft Copilot Notebooks</b>; a searchable knowledge base for frontline and support teams</li></ul>
+              <p class="ex"><b>Exercise:</b> consolidate a vendor proposal, a regulatory update and a competitor launch into a one-page management briefing.</p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m6">
+            <summary><span class="mn">M6</span><span class="mt"><small>10:45 – 12:15</small><strong>AI for Telco Data Analysis &amp; Business Insights</strong></span><span class="rel">For your function</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>Preparing and anonymising telco data; spotting missing values, duplicates and inconsistencies</li><li>Cleaning and reconciling across billing, CRM and network systems</li><li>Patterns, trends and anomalies by region, segment, channel and site</li><li>Churn and retention · ARPU and product mix (prepaid, postpaid, fibre, enterprise) · network KPIs (availability, dropped calls, throughput, congestion) · complaint and NPS/CSAT drivers · capex/opex · vendor SLAs · dealer performance</li></ul>
+              <p class="ex"><b>Exercise:</b> analyse an anonymised dataset (subscribers, churn, complaints) and present findings, root causes and three recommendations.</p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m7">
+            <summary><span class="mn">M7</span><span class="mt"><small>12:15 – 1:00</small><strong>Dashboards, Data Apps &amp; Infographics</strong></span><span class="rel">For your function</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>Turning insights into visual outputs leaders actually use</li><li>AI-generated code for interactive dashboards: KPI cards, charts and filters by region, segment or product</li><li>Simple data apps, e.g. a churn-risk lookup or site-performance tracker</li><li>Converting data summaries into professional infographic posters</li></ul>
+              <p class="ex"><b>Exercise:</b> build an interactive churn or network-performance dashboard and a one-page infographic from the Module 6 analysis.</p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m8">
+            <summary><span class="mn">M8</span><span class="mt"><small>2:00 – 4:40</small><strong>AI Implementation Plan for Your Telco Function</strong></span><span class="rel">For your function</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>Pain points: repetitive reporting, ticket triage, order fallout, complaint categorisation, reconciliation, information bottlenecks</li><li>Use-case design: problem, AI solution, users, data, tools, expected benefit (e.g. lower AHT, faster MTTR, reduced churn, hours saved)</li><li>Prioritise: quick wins 0–3 months, mid-term 3–6, longer-term 6–12</li><li>Governance checkpoints: PDPA, customer-data handling, IT and security approval, regulatory considerations</li></ul>
+              <p class="ex"><b>Workshop:</b> Problem → AI use case → Stakeholders → Tools/data → Pilot → Success metrics → Next action. Teams present 1–2 initiatives ready to pilot.</p>
+            </div>
+          </details>
+          <details class="mod" data-mod="r2">
+            <summary><span class="mn">✓</span><span class="mt"><small>4:40 – 5:15</small><strong>Post-Assessment &amp; Closing</strong></span><span class="rel">For your function</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>Post-training assessment against the Day 1 baseline</li><li>Programme recap, key takeaways and Q&amp;A</li><li>Next-step recommendations for leading AI adoption in your team</li></ul>
+            </div>
+          </details>
+    </div>
+  </div>
+</section>
+
+<section class="sec deliver">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Walk away with</span>
+      <h2 style="margin-top:14px">Real outputs, built during the programme</h2>
+      <p>Participants don't just learn about AI — they leave with work they can use in their next management meeting.</p>
+    </div>
+    <ol class="dl">
+      <li><div><strong>A leadership prompt library</strong><span>COSTAR prompts for summaries, escalations, briefings and board packs.</span></div></li>
+      <li><div><strong>A 5-slide management deck</strong><span>Built from a raw monthly performance pack.</span></div></li>
+      <li><div><strong>A one-page management briefing</strong><span>Vendor, regulatory and competitor documents consolidated with AI.</span></div></li>
+      <li><div><strong>A telco data analysis</strong><span>Findings, root causes and three recommendations.</span></div></li>
+      <li><div><strong>An interactive dashboard</strong><span>Churn or network performance, with filters and KPI cards.</span></div></li>
+      <li><div><strong>An infographic poster</strong><span>Key findings and actions on one page.</span></div></li>
+      <li style="grid-column:1/-1"><div><strong>A prioritised AI implementation plan for your function</strong><span>Use cases, owners, data, tools, governance checkpoints and success metrics — sequenced into 0–3, 3–6 and 6–12 month initiatives, and presented to peers.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Impact for your organisation</span>
+      <h2 style="margin-top:14px">Faster decisions, clearer reporting — with leaders in charge</h2>
+    </div>
+    <div class="impact">
+      <div class="imp"><h3>Reporting time freed</h3><p>Daily, weekly and monthly packs drafted with AI, so managers spend time on decisions, not formatting.</p></div>
+      <div class="imp"><h3>Sharper data insight</h3><p>Churn, ARPU, network and complaint drivers surfaced in hours, not weeks.</p></div>
+      <div class="imp"><h3>Clearer communication</h3><p>Technical network information turned into messages the board, frontline and customers understand.</p></div>
+      <div class="imp"><h3>AI adoption with guardrails</h3><p>A pilot-ready roadmap that respects PDPA, IT policy and regulatory obligations.</p></div>
+    </div>
+    <div class="toolwall" aria-label="Tools covered">
+      <span>ChatGPT</span><span>Claude</span><span>Gemini</span><span>Microsoft Copilot</span><span>DeepSeek</span><span>NotebookLM</span><span>Copilot Notebooks</span><span>Gamma</span><span>Napkin AI</span><span>COSTAR</span><span>AI dashboards</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec how">
+  <div class="wrap how-grid">
+    <div>
+      <span class="eyebrow">How it's delivered</span>
+      <h2 style="margin:14px 0 28px">Learn on telco scenarios — from the first hour</h2>
+      <div class="steps">
+        <div class="step"><div class="n">1</div><div><h3>Live AI demonstrations</h3><p>See each tool work on real leadership tasks, step by step.</p></div></div>
+        <div class="step"><div class="n">2</div><div><h3>Hands-on with telco data</h3><p>Anonymised subscriber, churn, complaint and network KPI datasets.</p></div></div>
+        <div class="step"><div class="n">3</div><div><h3>Cross-functional group work</h3><p>Network, CX and commercial leaders solve problems together.</p></div></div>
+        <div class="step"><div class="n">4</div><div><h3>Implementation workshop</h3><p>Each team presents 1–2 AI initiatives ready to pilot.</p></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="mix">
+        <h3>Training mix</h3>
+        <div class="bar" aria-hidden="true"><i></i><i></i></div>
+        <div class="legend"><span><b>70%</b> hands-on exercises &amp; workshop</span><span><b>30%</b> concepts &amp; demos</span></div>
+        <div class="who">
+          <h3>Ideal for</h3>
+          <div class="chips">
+            <span>Heads of department &amp; senior leaders</span>
+            <span>Network, NOC &amp; engineering managers</span>
+            <span>CX, contact centre &amp; service assurance</span>
+            <span>Commercial, marketing &amp; product</span>
+            <span>Enterprise &amp; B2B sales leaders</span>
+            <span>Retail, channel &amp; dealer management</span>
+            <span>Field ops &amp; rollout managers</span>
+            <span>Finance, regulatory, legal &amp; HR</span>
+          </div>
+        </div>
+        <p style="margin-top:22px;color:var(--muted);font-size:15px">No coding or data-science background needed. Participants bring a laptop; we confirm approved AI tools with your IT team beforehand. Pre- and post-training assessments measure progress for your HRD Corp records.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<div class="prog" id="prog-sales" data-pre="S-" hidden>
+<header class="hero" id="S-top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Prepared for U Mobile · 2-Day Hands-On Programme · HRD Corp Claimable</span>
+      <h1>AI Productivity &amp; Automation Mastery for <em>Telco Sales &amp; Operations</em><small>Reports, insights, dashboards and digital assistants — built with AI</small></h1>
+      <p class="tagline">Less time on reports. More time with customers.</p>
+      <p class="lead">Telco sales and operations teams juggle targets, campaigns, ARPU and churn numbers, and an endless stream of updates. This practical programme shows them how to use AI to write faster, analyse sales data, build dashboards, automate repetitive tasks and design digital assistants that help close more deals.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://wa.me/60184043913" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp David</a>
+        <a class="btn btn-ghost" href="#S-lab">Try the Sales Prompt Lab</a>
+      </div>
+      <div class="hero-tags">
+        <span class="um-tag">Tailored for U Mobile</span>
+        <span>2-day in-house</span>
+        <span>Microsoft Copilot</span>
+        <span>Dashboards &amp; forecasts</span>
+        <span>AI sales assistants</span>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="frame"><img src="assets/hero-sales.jpg" alt="Malaysian telco sales executives reviewing an AI-built sales dashboard and chat assistant on a laptop" width="900" height="1350"></div>
+      <div class="um-stamp"><img src="assets/umobile-logo.svg" alt=""><span>Prepared for<b>U Mobile</b></span></div>
+      <a class="badge" href="#trainer">
+        <img class="av" src="assets/david-hooi.jpg" alt="">
+        <div><small>Your trainer</small><strong>David Hooi</strong><small>HRD Corp Accredited Trainer</small></div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="stats" aria-label="Highlights">
+  <div class="wrap">
+    <div class="stat"><b>6,000+</b><span>professionals trained</span></div>
+    <div class="stat"><b>100+</b><span>companies served</span></div>
+    <div class="stat"><b>4</b><span>digital assistants explored</span></div>
+    <div class="stat"><b>1</b><span>AI roadmap presented per team</span></div>
+  </div>
+</section>
+
+<section class="logostrip" aria-label="Organisations trained">
+  <p class="ls-title">Trusted by teams at</p>
+  <div class="marquee"><div class="track"><img src="assets/logos/exxonmobil.png" alt="ExxonMobil"><img src="assets/logos/novartis.png" alt="Novartis"><img src="assets/logos/greateastern.png" alt="Great Eastern"><img src="assets/logos/rhb.png" alt="RHB"><img src="assets/logos/kwsp.png" alt="KWSP"><img src="assets/logos/tesla.png" alt="Tesla"><img src="assets/logos/intel.png" alt="Intel"><img src="assets/logos/electrolux.png" alt="Electrolux"><img src="assets/logos/tnb.png" alt="Tenaga Nasional"><img src="assets/logos/drbhicom.png" alt="DRB-HICOM"><img src="assets/logos/uobkayhian.png" alt="UOB Kay Hian"><img src="assets/logos/aon.png" alt="AON"><img src="assets/logos/haier.png" alt="Haier"><img src="assets/logos/sunway.png" alt="Sunway Medical Centre"><img src="assets/logos/nuskin.png" alt="Nu Skin"><img src="assets/logos/mubadala.png" alt="Mubadala Energy"><img src="assets/logos/proton.png" alt="Proton"><img src="assets/logos/kkmm.png" alt="KKMM"><img src="assets/logos/demant.png" alt="Demant"><img src="assets/logos/bsv.png" alt="BSV"><img src="assets/logos/menarini.png" alt="Menarini"><img src="assets/logos/jump.png" alt="Jump Retail"><img src="assets/logos/cid.png" alt="CID Realtors"><img src="assets/logos/kim.png" alt="KIM Realty"><img src="assets/logos/kbs.png" alt="KBS"><img src="assets/logos/ouji.png" alt="OUJI"><img src="assets/logos/exxonmobil.png" alt="" aria-hidden="true"><img src="assets/logos/novartis.png" alt="" aria-hidden="true"><img src="assets/logos/greateastern.png" alt="" aria-hidden="true"><img src="assets/logos/rhb.png" alt="" aria-hidden="true"><img src="assets/logos/kwsp.png" alt="" aria-hidden="true"><img src="assets/logos/tesla.png" alt="" aria-hidden="true"><img src="assets/logos/intel.png" alt="" aria-hidden="true"><img src="assets/logos/electrolux.png" alt="" aria-hidden="true"><img src="assets/logos/tnb.png" alt="" aria-hidden="true"><img src="assets/logos/drbhicom.png" alt="" aria-hidden="true"><img src="assets/logos/uobkayhian.png" alt="" aria-hidden="true"><img src="assets/logos/aon.png" alt="" aria-hidden="true"><img src="assets/logos/haier.png" alt="" aria-hidden="true"><img src="assets/logos/sunway.png" alt="" aria-hidden="true"><img src="assets/logos/nuskin.png" alt="" aria-hidden="true"><img src="assets/logos/mubadala.png" alt="" aria-hidden="true"><img src="assets/logos/proton.png" alt="" aria-hidden="true"><img src="assets/logos/kkmm.png" alt="" aria-hidden="true"><img src="assets/logos/demant.png" alt="" aria-hidden="true"><img src="assets/logos/bsv.png" alt="" aria-hidden="true"><img src="assets/logos/menarini.png" alt="" aria-hidden="true"><img src="assets/logos/jump.png" alt="" aria-hidden="true"><img src="assets/logos/cid.png" alt="" aria-hidden="true"><img src="assets/logos/kim.png" alt="" aria-hidden="true"><img src="assets/logos/kbs.png" alt="" aria-hidden="true"><img src="assets/logos/ouji.png" alt="" aria-hidden="true"></div></div>
+</section>
+
+<section class="sec about" id="S-about">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow">About the programme</span>
+      <h2 style="margin-top:14px">From daily grind to AI-powered workflow — in two days</h2>
+      <p class="about-p"><b>AI Productivity &amp; Automation Mastery for Telco Sales &amp; Operations</b> gives frontline sales and operations teams practical AI skills they use the very next day. <b>Day 1</b> covers prompting, data analysis, dashboards and workflow automation with digital assistants. <b>Day 2</b> moves into forecasting, data storytelling, sales enablement — and ends with each team presenting its own AI implementation roadmap.</p>
+      <p class="about-p">Every exercise uses telco scenarios: sales performance updates, customer segmentation, churn patterns, ARPU and conversion tracking, campaign visuals and objection handling. AI takes care of the repetitive work; your people bring the customer relationships and judgement that win deals.</p>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>2</b><span>days, fully hands-on</span></div>
+      <div class="fact"><b>6</b><span>modules + a final project</span></div>
+      <div class="fact"><b>3</b><span>Microsoft AI tools: Copilot, Notebook &amp; Agents</span></div>
+      <div class="fact"><b>HRD<small>Corp</small></b><span>claimable</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="S-outcomes">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What every participant leaves with</span>
+      <h2 style="margin-top:14px">Tools they use the next morning — not slides they forget</h2>
+      <p>Participants build real reports, dashboards and assistants for telco sales and operations work during the programme.</p>
+    </div>
+    <div class="builds">
+      <article class="build">
+        <div class="vis" aria-hidden="true"><svg viewBox="0 0 300 120"><rect x="20" y="14" width="260" height="96" rx="10" fill="#fff" stroke="#e9e4df"/><g font-family="sans-serif" font-size="11" font-weight="800"><rect x="34" y="24" width="22" height="13" rx="3" fill="#1c1c1e"/><text x="41" y="34" fill="#fff">C</text><rect x="34" y="40" width="22" height="13" rx="3" fill="#1c1c1e"/><text x="40" y="50" fill="#fff">O</text><rect x="34" y="56" width="22" height="13" rx="3" fill="#ff7900"/><text x="42" y="66" fill="#fff">S</text><rect x="34" y="72" width="22" height="13" rx="3" fill="#1c1c1e"/><text x="41" y="82" fill="#fff">T</text><rect x="34" y="88" width="22" height="13" rx="3" fill="#1c1c1e"/><text x="41" y="98" fill="#fff">A</text></g><rect x="64" y="28" width="110" height="6" rx="3" fill="#fff1e4"/><rect x="64" y="44" width="90" height="6" rx="3" fill="#fff1e4"/><rect x="64" y="60" width="104" height="6" rx="3" fill="#fff3e8"/><rect x="64" y="76" width="80" height="6" rx="3" fill="#fff1e4"/><rect x="64" y="92" width="96" height="6" rx="3" fill="#fff1e4"/><path d="m196 62 18 0" stroke="#ff7900" stroke-width="3" stroke-linecap="round"/><path d="m208 55 7 7-7 7" fill="none" stroke="#ff7900" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="226" y="30" width="42" height="62" rx="6" fill="#1c1c1e"/><rect x="232" y="38" width="30" height="5" rx="2.5" fill="#ffa24d"/><rect x="232" y="48" width="26" height="5" rx="2.5" fill="rgba(255,255,255,.5)"/><rect x="232" y="58" width="28" height="5" rx="2.5" fill="rgba(255,255,255,.5)"/><rect x="232" y="68" width="22" height="5" rx="2.5" fill="rgba(255,255,255,.5)"/></svg></div>
+        <span class="k">Outcome 1 · Faster Output</span>
+        <h3>Reports and updates in minutes</h3>
+        <p>Sales performance emails, campaign ideas, summaries and presentation decks — produced with structured COSTAR prompts and checked for accuracy.</p>
+        <ul><li>COSTAR prompts</li><li>Sales updates</li><li>Slide decks</li></ul>
+      </article>
+      <article class="build">
+        <div class="vis" aria-hidden="true"><svg viewBox="0 0 300 120"><rect x="20" y="14" width="260" height="96" rx="10" fill="#fff" stroke="#e9e4df"/><g fill="#fff1e4"><rect x="32" y="24" width="56" height="22" rx="5"/><rect x="94" y="24" width="56" height="22" rx="5"/><rect x="156" y="24" width="56" height="22" rx="5"/></g><rect x="218" y="24" width="50" height="22" rx="5" fill="#fff3e8"/><rect x="40" y="31" width="26" height="8" rx="4" fill="#1c1c1e"/><rect x="102" y="31" width="30" height="8" rx="4" fill="#1c1c1e"/><rect x="164" y="31" width="22" height="8" rx="4" fill="#ff7900"/><path d="M40 96 70 80l26 6 30-24 28 10 30-22 30 8 30-18" fill="none" stroke="#1c1c1e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M184 58l30 8 30-18" fill="none" stroke="#ff7900" stroke-width="3" stroke-dasharray="5 5" stroke-linecap="round"/><path d="M184 58l30 20 30-4" fill="none" stroke="#ff9f45" stroke-width="2" stroke-dasharray="4 5" stroke-linecap="round"/></svg></div>
+        <span class="k">Outcome 2 · Data to Decisions</span>
+        <h3>A telco dashboard &amp; sales forecast</h3>
+        <p>KPI tracking for ARPU, churn and conversion, a sales forecast with best and worst case scenarios, and a one-page performance summary.</p>
+        <ul><li>ARPU · churn · conversion</li><li>Forecasts</li><li>Scenarios</li></ul>
+      </article>
+      <article class="build">
+        <div class="vis" aria-hidden="true"><svg viewBox="0 0 300 120"><rect x="20" y="14" width="260" height="96" rx="10" fill="#111113"/><rect x="40" y="26" width="120" height="20" rx="10" fill="rgba(255,255,255,.14)"/><rect x="50" y="33" width="80" height="6" rx="3" fill="rgba(255,255,255,.6)"/><rect x="140" y="54" width="120" height="20" rx="10" fill="#ff7900"/><rect x="150" y="61" width="90" height="6" rx="3" fill="#fff"/><rect x="40" y="82" width="140" height="20" rx="10" fill="rgba(255,255,255,.14)"/><rect x="50" y="89" width="100" height="6" rx="3" fill="rgba(255,255,255,.6)"/><circle cx="248" cy="92" r="11" fill="#ff9f45"/><path d="m243 92 4 4 7-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <span class="k">Outcome 3 · Automation</span>
+        <h3>A digital assistant for a daily task</h3>
+        <p>Design an AI assistant that handles a repetitive sales or operations job — reporting, product FAQs, objection handling or lead qualification.</p>
+        <ul><li>Copilot Agents</li><li>Lead conversion</li><li>Role-play chatbot</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec anatomy" id="S-lab">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Sales Prompt Lab</span>
+      <h2 style="margin-top:14px">Same AI. Better prompt. Better result.</h2>
+      <p>Most people type one line and get a generic answer. Module 1 teaches the COSTAR framework so AI knows the context, the customer and the goal. Pick a sales task to see the difference.</p>
+    </div>
+    <div class="lab">
+      <div class="lab-pick">
+        <p class="rf-q">Choose a sales task</p>
+        <div class="roles" role="group" aria-label="Sales task">
+          <button type="button" class="lb-biz" data-k="update" aria-pressed="true">Sales performance update</button>
+          <button type="button" class="lb-biz" data-k="campaign" aria-pressed="false">Campaign idea</button>
+          <button type="button" class="lb-biz" data-k="objection" aria-pressed="false">Objection handling</button>
+          <button type="button" class="lb-biz" data-k="lead" aria-pressed="false">SME lead qualification</button>
+        </div>
+      </div>
+      <div class="lab-cmp" aria-live="polite">
+        <div class="lab-col weak">
+          <span class="tag">Typical prompt</span>
+          <p class="pr" id="S-labWeak"></p>
+          <div class="outb"><b>Typical result</b><p id="S-labWeakOut"></p></div>
+        </div>
+        <div class="lab-col strong">
+          <span class="tag">COSTAR prompt</span>
+          <dl class="pr-parts" id="S-labParts"></dl>
+          <div class="outb"><b>Sample AI draft</b><p id="S-labOut"></p></div>
+        </div>
+      </div>
+    </div>
+    <p class="where-n">Illustrative examples written for this page; plans, prices and figures are fictional. In class, participants run these prompts with their own products and data.</p>
+  </div>
+</section>
+
+<section class="sec" id="S-repurpose">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Digital assistants</span>
+      <h2 style="margin-top:14px">Put repetitive work on autopilot</h2>
+      <p>Modules 4 and 6 show how to design AI assistants that support sales activities and internal processes — so your team spends more time with customers.</p>
+    </div>
+    <div class="hub">
+      <div class="hub-core">
+        <div class="ic"><svg><use href="#i-bot"/></svg></div>
+        <span class="k">Your AI team-mate</span>
+        <h3>"Built once, used every day"</h3>
+        <p>Give an assistant clear instructions, your product information and your process — then let it handle the routine while you handle the relationship.</p>
+      </div>
+      <div class="hub-out">
+        <div class="ch"><svg><use href="#i-chart"/></svg><div><b>Sales reporting</b><span>Turns raw numbers into the daily update</span></div></div>
+        <div class="ch"><svg><use href="#i-book"/></svg><div><b>Internal knowledge</b><span>Answers plan, policy and process questions</span></div></div>
+        <div class="ch"><svg><use href="#i-target"/></svg><div><b>Lead conversion</b><span>Qualifies leads and drafts follow-ups</span></div></div>
+        <div class="ch"><svg><use href="#i-chat"/></svg><div><b>Role-play coach</b><span>Practise pitches with an AI customer</span></div></div>
+        <div class="ch"><svg><use href="#i-tag"/></svg><div><b>Product recommender</b><span>Matches the right plan to each customer</span></div></div>
+        <div class="ch"><svg><use href="#i-check"/></svg><div><b>FAQ &amp; objections</b><span>Consistent, accurate answers every time</span></div></div>
+      </div>
+    </div>
+
+    <div class="night">
+      <h3>The AI workflow you'll practise: input → process → insight → action</h3>
+      <p>The repeatable pattern from Module 3, applied to a typical weekly sales review.</p>
+      <div class="tl">
+        <div><b>Input</b><span>Export sales, ARPU, churn and conversion data from your systems.</span></div>
+        <div><b>Process</b><span>AI cleans the data and spots trends, gaps and outliers.</span></div>
+        <div><b>Insight</b><span>A dashboard and one-page summary show what changed and why.</span></div>
+        <div><b>Action</b><span>AI drafts the team update, next-week focus and customer follow-ups.</span></div>
+        <div><b>Automate</b><span>An assistant repeats the routine every week — you review and send.</span></div>
+      </div>
+    </div>
+    <div class="honest"><svg><use href="#i-info"/></svg><span>AI drafts — people decide. Participants learn to check outputs for accuracy, protect customer data and follow company policy before anything reaches a customer or manager. Exercises use anonymised telco-style data, and we confirm which Microsoft AI features your organisation has enabled before the programme.</span></div>
+  </div>
+</section>
+
+<section class="sec explorer" id="S-programme">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Explore the programme</span>
+      <h2 style="margin-top:14px">Day 1 to create and automate. Day 2 to analyse, sell and plan.</h2>
+      <p>Pick your role to see which modules matter most and what you could do with AI. Open any module for the details.</p>
+    </div>
+
+    <div class="rolefinder">
+      <p class="rf-q">I work in…</p>
+      <div class="roles" role="group" aria-label="Role">
+        <button type="button" class="role" data-role="exec" aria-pressed="false">Sales Executive</button>
+        <button type="button" class="role" data-role="mgr" aria-pressed="false">Sales Manager</button>
+        <button type="button" class="role" data-role="ops" aria-pressed="false">Business Operations</button>
+        <button type="button" class="role" data-role="cx" aria-pressed="false">Customer Experience</button>
+        <button type="button" class="role" data-role="data" aria-pressed="false">Reporting &amp; Analytics</button>
+      </div>
+      <div class="rf-out" id="S-rfOut" hidden>
+        <div id="S-rfRole" hidden>
+          <p class="rf-h">For your role, what you could do with AI:</p>
+          <ul id="S-rfWins"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Programme days">
+      <button type="button" role="tab" id="S-tab-d1" aria-controls="S-pane-d1" aria-selected="true"><b>Day 1</b><span>Creating, Analysing &amp; Automating with AI</span><i class="cnt" data-cnt="d1"></i></button>
+      <button type="button" role="tab" id="S-tab-d2" aria-controls="S-pane-d2" aria-selected="false"><b>Day 2</b><span>Data, Sales Enablement &amp; AI Roadmap</span><i class="cnt" data-cnt="d2"></i></button>
+    </div>
+    <div class="pane" id="S-pane-d1" role="tabpanel" aria-labelledby="S-tab-d1">
+          <details class="mod" data-mod="m0">
+            <summary><span class="mn">00</span><span class="mt"><small>9:00 – 9:30</small><strong>Introduction &amp; Icebreaker</strong></span><span class="rel">For your role</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb"><ul><li>Course objectives and participant introductions</li><li>Interactive activity aligned to the telco context</li></ul></div>
+          </details>
+          <details class="mod" data-mod="m1" open>
+            <summary><span class="mn">M1</span><span class="mt"><small>9:30 – 11:00</small><strong>Introduction to AI &amp; Prompt Engineering</strong></span><span class="rel">For your role</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>AI in business and use cases in telco sales and operations</li><li>Prompt fundamentals: clarity, context and constraints</li><li><b>COSTAR</b> framework fundamentals</li><li>Output control: tone, audience, format and accuracy checks</li><li>Iteration: refining prompts using feedback</li></ul>
+              <p class="ex"><b>Exercise:</b> generate a sales performance update email. <b>Assignment:</b> create a telco campaign idea using structured prompts.</p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m2">
+            <summary><span class="mn">M2</span><span class="mt"><small>11:15 – 12:45</small><strong>AI for Data Analysis &amp; Business Insights</strong></span><span class="rel">For your role</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>AI-powered data analysis; structured vs unstructured data</li><li>Sales performance tracking and customer segmentation</li><li>Churn pattern identification</li><li>Revenue and usage trends</li></ul>
+              <p class="ex"><b>Exercise:</b> interpret a sales dataset, identify performance gaps and opportunities, and create a performance summary.</p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m3">
+            <summary><span class="mn">M3</span><span class="mt"><small>1:45 – 3:15</small><strong>AI-Enhanced Workflows &amp; Data Visualisation</strong></span><span class="rel">For your role</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>Workflow thinking: input → process → insight → action</li><li>Dashboards for sales performance and KPI tracking (ARPU, churn, conversion)</li><li>Structuring insights for decision-making</li><li>AI-assisted presentations: data into slides, outlines and key messages, reports into decks</li></ul>
+              <p class="ex"><b>Exercise:</b> build a telco dashboard from raw data, a one-page performance summary and a short presentation deck.</p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m4">
+            <summary><span class="mn">M4</span><span class="mt"><small>3:30 – 5:00</small><strong>AI for Workflow Automation &amp; Digital Assistants</strong></span><span class="rel">For your role</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>AI-driven workflow automation</li><li>Identifying repetitive tasks in sales and operations</li><li>Use cases: <b>sales reporting assistant, internal knowledge assistant, lead conversion assistant, role-play chatbot</b></li></ul>
+              <p class="ex"><b>Practical:</b> design a digital assistant to automate a daily task. <b>Group challenge:</b> teams automate a common telco workflow and present it.</p>
+            </div>
+          </details>
+    </div>
+    <div class="pane" id="S-pane-d2" role="tabpanel" aria-labelledby="S-tab-d2" hidden>
+          <details class="mod" data-mod="r2">
+            <summary><span class="mn">00</span><span class="mt"><small>9:00 – 9:15</small><strong>Recap &amp; Day 2 Objectives</strong></span><span class="rel">For your role</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb"><ul><li>Summary of Day 1 learnings and overview of Day 2</li></ul></div>
+          </details>
+          <details class="mod" data-mod="m5" open>
+            <summary><span class="mn">M5</span><span class="mt"><small>9:15 – 11:00</small><strong>Data &amp; Financial Analysis for Decision-Making</strong></span><span class="rel">For your role</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>AI for data-driven decisions; data preparation and basic analysis</li><li>Revenue tracking and sales trend analysis</li><li>Forecasting and scenario planning</li><li>Customer and product performance</li></ul>
+              <p class="ex"><b>Practical:</b> build a sales forecast, a best/worst case scenario comparison and a KPI tracking framework.</p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m6">
+            <summary><span class="mn">M6</span><span class="mt"><small>11:15 – 1:00</small><strong>Data Storytelling, Sales Communication &amp; Digital Sales Enablement</strong></span><span class="rel">For your role</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>Turning data into clear sales narratives for sales teams, management and customers</li><li>AI-assisted sales materials: posters, campaign visuals, product highlights</li><li>Digital sales assistants for <b>product recommendation, FAQ and objection handling, lead qualification</b></li></ul>
+              <p class="ex"><b>Exercise:</b> convert data into a sales story with recommendations and create a sales poster. <b>Group activity:</b> design a digital sales assistant for a telco use case.</p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m7">
+            <summary><span class="mn">FP</span><span class="mt"><small>2:00 – 4:55</small><strong>Final Project: AI Implementation Roadmap</strong></span><span class="rel">For your role</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li>Quick team activity to re-engage</li><li>Identify business challenges, AI use cases, stakeholders and data requirements</li><li>Roadmap: quick wins (0–3 months), mid-term (3–6), long-term (6–12)</li></ul>
+              <p class="ex"><b>Presentation:</b> teams present their AI implementation roadmap for sales and operations.</p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m8">
+            <summary><span class="mn">✓</span><span class="mt"><small>4:55 – 5:10</small><strong>Closing Session</strong></span><span class="rel">For your role</span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb"><ul><li>Key takeaways, Q&amp;A and feedback</li><li>Resources for continued learning</li></ul></div>
+          </details>
+    </div>
+  </div>
+</section>
+
+<section class="sec deliver">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Walk away with</span>
+      <h2 style="margin-top:14px">Real work, built during the programme</h2>
+      <p>Participants don't just learn about AI — they leave with tools and templates for their daily job.</p>
+    </div>
+    <ol class="dl">
+      <li><div><strong>A sales prompt toolkit</strong><span>COSTAR prompts for updates, emails, campaigns and summaries.</span></div></li>
+      <li><div><strong>A sales performance summary</strong><span>Gaps and opportunities from a real-style dataset.</span></div></li>
+      <li><div><strong>A telco KPI dashboard</strong><span>ARPU, churn and conversion at a glance.</span></div></li>
+      <li><div><strong>A sales forecast &amp; scenarios</strong><span>Best and worst case, with a KPI tracking framework.</span></div></li>
+      <li><div><strong>A sales story &amp; poster</strong><span>Data turned into a narrative and a campaign visual.</span></div></li>
+      <li><div><strong>A digital assistant design</strong><span>For reporting, FAQs, objections or lead qualification.</span></div></li>
+      <li style="grid-column:1/-1"><div><strong>A team AI implementation roadmap for sales and operations</strong><span>Business challenges, use cases, stakeholders and data — sequenced into quick wins, mid-term and long-term actions, and presented in the final project.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Impact for your organisation</span>
+      <h2 style="margin-top:14px">More selling time, sharper insight — with people in charge</h2>
+    </div>
+    <div class="impact">
+      <div class="imp"><h3>Faster turnaround</h3><p>Reports, updates and performance tracking produced in minutes instead of hours.</p></div>
+      <div class="imp"><h3>Data-driven selling</h3><p>Teams spot segment, churn and product trends — and act on them sooner.</p></div>
+      <div class="imp"><h3>Consistent customer messages</h3><p>Shared prompts and assistants keep answers accurate and on-brand.</p></div>
+      <div class="imp"><h3>Repeatable workflows</h3><p>Routine tasks become AI-supported processes any team member can run.</p></div>
+    </div>
+    <div class="toolwall" aria-label="Tools covered">
+      <span>Microsoft Copilot</span><span>Copilot Notebooks</span><span>Copilot Agents</span><span>COSTAR</span><span>Dashboards</span><span>Forecasting</span><span>AI presentations</span><span>AI sales visuals</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec how">
+  <div class="wrap how-grid">
+    <div>
+      <span class="eyebrow">How it's delivered</span>
+      <h2 style="margin:14px 0 28px">Learn by doing — on telco scenarios</h2>
+      <div class="steps">
+        <div class="step"><div class="n">1</div><div><h3>Interactive lessons &amp; live demos</h3><p>See each tool work on real sales and operations tasks.</p></div></div>
+        <div class="step"><div class="n">2</div><div><h3>Hands-on exercises</h3><p>Participants write, analyse and build with telco-style data.</p></div></div>
+        <div class="step"><div class="n">3</div><div><h3>Group challenges</h3><p>Teams automate a common telco workflow and design a sales assistant.</p></div></div>
+        <div class="step"><div class="n">4</div><div><h3>Final project</h3><p>Each team presents its AI implementation roadmap.</p></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="mix">
+        <h3>Training mix</h3>
+        <div class="bar" aria-hidden="true"><i></i><i></i></div>
+        <div class="legend"><span><b>70%</b> hands-on exercises &amp; project</span><span><b>30%</b> concepts &amp; demos</span></div>
+        <div class="who">
+          <h3>Ideal for</h3>
+          <div class="chips">
+            <span>Sales executives</span>
+            <span>Sales managers</span>
+            <span>Business operations teams</span>
+            <span>Customer experience teams</span>
+            <span>Retail &amp; dealer teams</span>
+            <span>Data-driven decision makers</span>
+          </div>
+        </div>
+        <p style="margin-top:22px;color:var(--muted);font-size:15px">No technical background needed. Participants bring a laptop with Microsoft 365 access; we check which Copilot features are enabled in your organisation beforehand.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<section class="sec trainer" id="trainer">
+  <div class="wrap trainer-grid">
+    <div class="t-photo">
+      <img class="main" src="assets/david-hooi-2.jpg" alt="David Hooi" width="700" height="836">
+      <div class="quote">“Transform workflows. Accelerate growth. Lead with AI.”</div>
+    </div>
+    <div>
+      <span class="eyebrow">Your trainer</span>
+      <h2 style="margin-top:14px">David Hooi<small>BEng, MBA</small></h2>
+      <p class="t-role">AI Adoption Specialist · Corporate Trainer · Founder, D Action Consultancy</p>
+      <p class="bio">David brings <b>over 20 years of commercial and leadership experience at GlaxoSmithKline (GSK)</b>, where he served as Sales Director and earned multiple Sales Excellence Awards. He has sat in the leadership seat — owning targets, reports and teams — and teaches AI as a practical tool for better, faster management decisions.</p>
+      <p class="bio">As founder of D Action Consultancy &amp; Services, he specialises in <b>AI adoption for productivity, data and business transformation</b>. He has trained <b>6,000+ professionals across 100+ companies</b> — including major banks, insurers, government agencies and multinationals.</p>
+      <div class="creds">
+        <div class="cred"><svg><use href="#i-check"/></svg>HRD Corp Accredited Trainer</div>
+        <div class="cred"><svg><use href="#i-check"/></svg>Google AI Leader</div>
+        <div class="cred"><svg><use href="#i-check"/></svg>Ex-Sales Director, GSK</div>
+        <div class="cred"><svg><use href="#i-check"/></svg>Bilingual: English &amp; Mandarin</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="brands">
+  <div class="wrap">
+    <div class="box">
+      <h2>Trusted by leading organisations</h2>
+      <p class="sub">Banks, insurers, multinationals, government agencies and growing SMEs.</p>
+      <div class="logogrid"><div><img src="assets/logos/exxonmobil.png" alt="ExxonMobil"></div><div><img src="assets/logos/novartis.png" alt="Novartis"></div><div><img src="assets/logos/greateastern.png" alt="Great Eastern"></div><div><img src="assets/logos/rhb.png" alt="RHB"></div><div><img src="assets/logos/kwsp.png" alt="KWSP"></div><div><img src="assets/logos/tesla.png" alt="Tesla"></div><div><img src="assets/logos/intel.png" alt="Intel"></div><div><img src="assets/logos/electrolux.png" alt="Electrolux"></div><div><img src="assets/logos/tnb.png" alt="Tenaga Nasional"></div><div><img src="assets/logos/drbhicom.png" alt="DRB-HICOM"></div><div><img src="assets/logos/uobkayhian.png" alt="UOB Kay Hian"></div><div><img src="assets/logos/aon.png" alt="AON"></div><div><img src="assets/logos/haier.png" alt="Haier"></div><div><img src="assets/logos/sunway.png" alt="Sunway Medical Centre"></div><div><img src="assets/logos/nuskin.png" alt="Nu Skin"></div><div><img src="assets/logos/mubadala.png" alt="Mubadala Energy"></div><div><img src="assets/logos/proton.png" alt="Proton"></div><div><img src="assets/logos/kkmm.png" alt="KKMM"></div><div><img src="assets/logos/demant.png" alt="Demant"></div><div><img src="assets/logos/bsv.png" alt="BSV"></div><div><img src="assets/logos/menarini.png" alt="Menarini"></div><div><img src="assets/logos/jump.png" alt="Jump Retail"></div><div><img src="assets/logos/cid.png" alt="CID Realtors"></div><div><img src="assets/logos/kim.png" alt="KIM Realty"></div><div><img src="assets/logos/kbs.png" alt="KBS"></div><div><img src="assets/logos/ouji.png" alt="OUJI"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec cta" id="contact">
+  <div class="wrap">
+    <h2>Equip U Mobile’s leaders and frontline teams with practical AI</h2>
+    <p>Prepared for U Mobile Sdn Bhd. Run either programme in-house — or both, so managers and their teams adopt AI together. Datasets, scenarios and exercises will be tailored to U Mobile’s functions, data and approved tools before delivery. HRD Corp claimable.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="https://wa.me/60184043913" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp +60 18-404 3913</a>
+      <a class="btn btn-ghost" href="mailto:david@daction.com"><svg><use href="#i-mail"/></svg>david@daction.com</a>
+    </div>
+    <div class="contact">
+      <a href="https://www.davidhooi.com" target="_blank" rel="noopener"><svg><use href="#i-web"/></svg>www.davidhooi.com</a>
+    </div>
+    <p style="margin-top:28px;font-size:13px;color:rgba(255,255,255,.55)">ChatGPT, Claude, Gemini, NotebookLM, Microsoft Copilot, DeepSeek, Gamma and Napkin AI are trademarks of their respective owners. These independent programmes are not affiliated with or endorsed by any of them. U Mobile and the U Mobile logo are trademarks of U Mobile Sdn Bhd, shown here only to identify the client for whom this proposal was prepared.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><span class="flogo"><img src="assets/dac-logo.png" alt="DAC — Firing Up Growth"></span><span>© 2026 D Action Consultancy &amp; Services Sdn Bhd (202501060150) · Prepared for U Mobile</span></div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/60184043913" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<script>document.documentElement.classList.add("js");</script>
+<script>
+(function(){
+  var DATA={"lead":{"LAB":{"outage":{"w":"Summarise last night's outage for management.","wo":"\"There was a network outage last night affecting some customers. The team worked to restore service. Root cause is being investigated. We apologise for the inconvenience.\"","p":["Fibre-cut incident 14 Oct, 23:10–02:40, Klang Valley south cluster; NOC log, ticket count and RCA notes attached.","A 1-page management summary that supports a decision on route redundancy.","Executive brief: headline, impact, cause, actions, decision needed.","Factual, calm, accountable — no blame, no jargon.","COO and heads of network, CX and commercial.","Under 200 words; impact in numbers; 3 actions with owners and dates."],"o":"HEADLINE: 3.5-hour fibre-cut outage, south Klang Valley — service fully restored 02:40.\nIMPACT: ~18,000 fibre subscribers and 42 sites; 1,260 complaint tickets; 3 enterprise SLA breaches.\nCAUSE: third-party roadworks cut the primary route; the backup path shares the same duct.\nACTIONS: (1) Enterprise SLA credits & account calls — B2B Sales, Fri. (2) Customer SMS + FAQ update — CX, today. (3) Route-diversity survey — Network, 2 weeks.\nDECISION NEEDED: approve diverse-route study for 6 high-risk clusters."},"churn":{"w":"Analyse our churn data.","wo":"\"Churn is influenced by many factors such as price, network quality and customer service. To reduce churn, consider improving customer satisfaction and offering competitive plans.\"","p":["Anonymised Q3 postpaid data: plan, tenure, region, complaints, NPS, port-out reason.","Identify the top churn drivers and recommend 3 actions for EXCO.","Insight brief with numbers, ranked drivers and recommendations.","Direct, evidence-based, decision-focused.","EXCO — commercial, CX and network heads.","Max 5 bullets + 3 recommendations; flag data gaps honestly."],"o":"KEY INSIGHT: churn is concentrated, not general — 41% of Q3 port-outs came from customers in months 10–14 of a 12-month contract.\nDRIVERS: (1) Contract-end with no retention offer (2) 2+ network complaints in 90 days → 3× churn rate (3) Competitor fibre bundles in Penang and Johor.\nRECOMMENDATIONS: proactive offer at month 10 · priority fix for repeat-complaint customers · bundle response in two hotspot regions.\nDATA GAP: port-out reason blank for 18% of records."},"advisory":{"w":"Write a message about planned maintenance.","wo":"\"Dear valued customer, we will be performing maintenance soon. Service may be affected. We apologise for any inconvenience caused. Thank you.\"","p":["Planned core-network upgrade, Sun 20 Oct, 1:00–5:00am, Penang island; mobile data may drop for up to 20 minutes.","Inform customers early and reduce complaint calls.","SMS + app notification + FAQ.","Clear, reassuring, respectful of customers' time.","Prepaid and postpaid mobile customers on Penang island.","SMS under 160 characters; 3 FAQ answers; EN version, BM ready to adapt."],"o":"SMS: Upgrade notice: Sun 20 Oct, 1–5am, Penang island. Mobile data may pause up to 20 min while we improve speeds. No action needed. Info: [link]\n\nFAQ\nWill calls work? Yes — voice and SMS continue as normal.\nDo I need to restart my phone? Only if data hasn't returned by 5:30am.\nWhy now? 1–5am is our lowest-usage window, so fewer customers are affected."},"vendor":{"w":"Compare these vendor proposals.","wo":"\"Both vendors offer good solutions. Vendor A has strong features while Vendor B is cost-effective. The best choice depends on your requirements.\"","p":["Two RAN-modernisation proposals (A: 86 pages, B: 64 pages) and our RFP scoring criteria.","Recommend a vendor to the procurement committee with clear trade-offs.","Side-by-side table + recommendation + risks.","Neutral, precise, audit-ready.","Procurement committee, CTO and CFO.","Compare price, SLA, delivery timeline, support and exit terms; cite page numbers."],"o":"RECOMMENDATION: Vendor A, subject to negotiating the exit clause.\nPRICE (5-yr TCO): A RM 212m (p.41) · B RM 198m (p.33)\nSLA: A 99.95% with penalties (p.52) · B 99.9%, penalties capped at 5% (p.47)\nDELIVERY: A 14 months · B 18 months, phased (p.29)\nSUPPORT: A local 24/7 NOC · B regional, Singapore-based\nRISK: A's exit terms lock in proprietary tools for 3 years (p.78) — negotiate before award."}},"R":{"net":{"mods":["m2","m4","m6","m7"],"wins":["Incident and RCA summaries drafted in minutes, written for non-technical leaders","Network KPI analysis: availability, dropped calls and congestion hotspots by site","A site-performance tracker built as a simple AI data app"]},"cx":{"mods":["m2","m4","m5","m6"],"wins":["Complaint and NPS/CSAT driver analysis from raw ticket data","Clear customer communications during service disruptions","A searchable knowledge base so frontline teams find answers faster"]},"com":{"mods":["m3","m4","m6","m7"],"wins":["Churn and ARPU analysis by plan, tenure and segment","Competitor plan comparisons turned into one-page briefings","An interactive churn dashboard for the commercial review"]},"ent":{"mods":["m2","m4","m5","m8"],"wins":["RFP responses and proposals structured and summarised with AI","Contract SLAs and obligations extracted from long agreements","Account reviews and business cases built faster"]},"retail":{"mods":["m4","m6","m7","m8"],"wins":["Dealer and channel performance compared by region","Weekly sales packs drafted automatically from raw data","Visual scorecards and infographics for store and dealer meetings"]},"field":{"mods":["m4","m5","m6","m8"],"wins":["Capex, opex and rollout budget tracking with AI analysis","Contractor and vendor performance measured against SLAs","Field reports and change records summarised for management"]},"corp":{"mods":["m3","m5","m6","m8"],"wins":["Regulatory consultations and policies summarised and compared","Budget, procurement and vendor proposal analysis","An AI adoption plan with PDPA and governance checkpoints"]}},"def":"outage","title":"AI Productivity, Data & Implementation Mastery for Telco Managers & Leaders | Prepared for U Mobile"},"sales":{"LAB":{"update":{"w":"Write a sales update email.","wo":"\"Hi team, here is our sales update. Sales were good this month but some areas need improvement. Let's keep up the good work and push harder next month. Thanks.\"","p":["October results: postpaid adds 1,240 vs target 1,400; fibre 610 vs 500; ARPU RM 68.40 (+2%); Johor region behind.","Motivate the team and set clear focus for November.","Short team email: wins, gap, focus, ask.","Positive, direct, energising — no blame.","Sales executives and team leads.","Under 150 words; 3 bullet focus areas; one clear call-to-action."],"o":"Subject: October — fibre beat target, postpaid push for November\n\nHi team,\nGreat work on fibre: 610 activations, 22% above target, and ARPU up 2% to RM 68.40.\nPostpaid closed at 1,240 — 160 short, mostly in Johor.\n\nNovember focus:\n• Bundle postpaid with every fibre sign-up\n• Johor: daily huddle + 2 roadshows\n• Follow up October's 300 unconverted leads by 8 Nov\n\nLet's close the gap — share one win in the group chat by Friday."},"campaign":{"w":"Give me a campaign idea for our telco.","wo":"\"Launch a special promotion with great value plans and attractive offers. Use social media and in-store displays to attract customers. Offer discounts to boost sales.\"","p":["Prepaid-to-postpaid migration; new RM 58 postpaid plan with 5G and unlimited calls; school holidays in December.","Convert prepaid users aged 18–30 to postpaid in 6 weeks.","Campaign one-pager: big idea, offer, channels, timeline, KPIs.","Youthful, fun, value-focused.","Prepaid users aged 18–30, students and first-jobbers.","Max 200 words; include 3 channel tactics and 2 KPIs."],"o":"BIG IDEA: \"Level Up Your Line\" — upgrade from prepaid to 5G postpaid this school holiday.\nOFFER: RM 58 plan, first month free + double data for 3 months when you keep your number.\nCHANNELS: (1) TikTok creator challenge: #LevelUpMyLine (2) In-app nudge to heavy prepaid top-up users (3) Store and dealer kiosk: 5-minute upgrade, bring IC only.\nTIMELINE: teaser 1–7 Dec · launch 8 Dec · push weekends to 15 Jan.\nKPIs: 8,000 migrations · 30% from in-app nudges."},"objection":{"w":"How to handle customer saying too expensive?","wo":"\"Explain the value of the product to the customer. Highlight the benefits and offer a discount if needed. Be polite and understanding.\"","p":["SME owner comparing our 500Mbps business fibre (RM 199) with a competitor at RM 169.","Keep the deal without discounting.","3-step talk track + one question to ask.","Empathetic, confident, consultative.","SME owners, 5–30 staff, worried about cost.","Under 120 words; no badmouthing competitors."],"o":"1. ACKNOWLEDGE: \"That's fair — RM 30 a month matters for a growing business.\"\n2. REFRAME: \"Our plan includes a static IP, 4-hour business support response and a backup 5G line. If the internet goes down for half a day, what does that cost your team?\"\n3. CONFIRM: \"So the question is whether RM 1 a day is worth guaranteed uptime. Shall we start with a 30-day check on your current downtime?\"\n\nASK: \"How often did your connection drop last month?\""},"lead":{"w":"Is this lead good?","wo":"\"The lead may be a good opportunity. Follow up with the customer to understand their needs and present suitable products.\"","p":["Web enquiry: logistics SME, 45 staff, 3 branches, current provider contract ends in 2 months, asked about fleet SIMs.","Score and prioritise the lead; suggest next step.","Lead score card: fit, need, timing, authority, next action.","Concise, practical.","B2B sales executive.","Score each criterion 1–5; total /20; draft a 50-word follow-up message."],"o":"FIT 5/5 — multi-branch SME, fleet need\nNEED 4/5 — fleet SIMs + likely branch connectivity\nTIMING 5/5 — contract ends in 2 months\nAUTHORITY 2/5 — role unknown; confirm decision-maker\nTOTAL 16/20 → HOT. Call within 24 hours.\n\nFOLLOW-UP: \"Hi Encik Faizal, thanks for your enquiry on fleet SIMs. With 3 branches, we may also save you on branch connectivity. Could we have a 15-minute call this Thursday? I'll bring a side-by-side cost comparison before your contract renews.\""}},"R":{"exec":{"mods":["m1","m4","m6"],"wins":["Follow-up messages and proposals drafted in minutes","A lead conversion assistant that scores leads and suggests next steps","Objection-handling practice with an AI role-play customer"]},"mgr":{"mods":["m1","m3","m5","m7"],"wins":["Team performance updates and dashboards produced automatically","Sales forecasts with best and worst case scenarios","A roadmap to roll out AI across your sales team"]},"ops":{"mods":["m2","m3","m4","m7"],"wins":["Repetitive reporting turned into an AI-supported workflow","Usage and revenue trends analysed without manual spreadsheets","An internal knowledge assistant for process and policy questions"]},"cx":{"mods":["m1","m2","m6"],"wins":["Churn patterns and customer segments identified from data","Consistent FAQ and objection answers across channels","Clear customer messages drafted for every situation"]},"data":{"mods":["m2","m3","m5"],"wins":["Raw data cleaned and summarised into insight in minutes","KPI tracking for ARPU, churn and conversion","Reports turned into presentation decks automatically"]}},"def":"update","title":"AI Productivity & Automation Mastery for Telco Sales & Operations | Prepared for U Mobile"}};
+  var L=["Context","Objective","Style","Tone","Audience","Response"];
+  function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+  function init(key){
+    var root=document.getElementById('prog-'+key),pre=root.dataset.pre,d=DATA[key];
+    function $(id){return document.getElementById(pre+id)}
+    function q(s){return root.querySelectorAll(s)}
+    /* prompt lab */
+    function renderLab(k){var x=d.LAB[k];
+      $('labWeak').textContent=x.w;$('labWeakOut').textContent=x.wo;
+      $('labParts').innerHTML=L.map(function(l,i){return '<div><dt>'+l+'</dt><dd>'+esc(x.p[i])+'</dd></div>'}).join('');
+      $('labOut').textContent=x.o}
+    q('.lb-biz').forEach(function(btn){btn.addEventListener('click',function(){
+      q('.lb-biz').forEach(function(b){b.setAttribute('aria-pressed',b===btn)});renderLab(btn.dataset.k)})});
+    renderLab(d.def);
+    /* day tabs */
+    var tabs=q('.tabs [role=tab]');
+    function showTab(t){tabs.forEach(function(b){var on=b===t;b.setAttribute('aria-selected',on);document.getElementById(b.getAttribute('aria-controls')).hidden=!on})}
+    tabs.forEach(function(b){b.addEventListener('click',function(){showTab(b);var p=document.getElementById(b.getAttribute('aria-controls'));var f=p.querySelector('.mod.hl')||p.querySelector('.mod');if(f&&!p.querySelector('.mod[open]'))f.open=true})});
+    /* role finder */
+    var ex=root.querySelector('.explorer'),out=$('rfOut'),wins=$('rfWins');
+    q('.role').forEach(function(btn){btn.addEventListener('click',function(){
+      var on=btn.getAttribute('aria-pressed')!=='true';
+      q('.role').forEach(function(b){b.setAttribute('aria-pressed','false')});
+      q('.mod').forEach(function(m){m.classList.remove('hl')});
+      q('.cnt').forEach(function(c){c.classList.remove('on')});
+      if(!on){ex.classList.remove('filtering');$('rfRole').hidden=true;out.hidden=true;return}
+      btn.setAttribute('aria-pressed','true');ex.classList.add('filtering');
+      var r=d.R[btn.dataset.role],first=null;
+      r.mods.forEach(function(id){var m=root.querySelector('.mod[data-mod="'+id+'"]');m.classList.add('hl');if(!first)first=m});
+      ['d1','d2'].forEach(function(n){var c=root.querySelector('[data-cnt='+n+']'),k=$('pane-'+n).querySelectorAll('.mod.hl').length;c.textContent=k;c.classList.toggle('on',k>0)});
+      wins.innerHTML=r.wins.map(function(w){return '<li>'+w+'</li>'}).join('');
+      $('rfRole').hidden=false;out.hidden=false;
+      if(first){showTab(document.getElementById(first.closest('.pane').id.replace('pane','tab')));q('.mod').forEach(function(m){m.open=m.classList.contains('hl')&&m===first})}
+    })});
+  }
+  init('lead');init('sales');
+
+  /* programme switcher */
+  var sw=document.querySelectorAll('.pswitch button');
+  function showProg(key,scroll){
+    if(!DATA[key])key='lead';
+    sw.forEach(function(b){b.setAttribute('aria-selected',b.dataset.prog===key)});
+    Object.keys(DATA).forEach(function(k){document.getElementById('prog-'+k).hidden=k!==key});
+    document.title=DATA[key].title;
+    try{history.replaceState(null,'',location.pathname+(key==='lead'?'':'?p='+key)+location.hash)}catch(e){}
+    if(scroll)window.scrollTo({top:0,behavior:'smooth'});
+  }
+  sw.forEach(function(b){b.addEventListener('click',function(){if(b.getAttribute('aria-selected')!=='true')showProg(b.dataset.prog,true)})});
+  showProg(new URLSearchParams(location.search).get('p')||'lead',false);
+
+  /* reveal on scroll */
+  var els=document.querySelectorAll(".fact,.rolefinder,.tabs,.sec-head,.build,.lab,.hub-core,.ch,.night,.dl li,.imp,.step,.mix,.t-photo,.creds,.brands .box,.cta h2,.toolwall");
+  els.forEach(function(e,i){e.classList.add("reveal");e.style.transitionDelay=((i%3)*80)+"ms"});
+  if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12});els.forEach(function(e){io.observe(e)})}else{els.forEach(function(e){e.classList.add("in")})}
+})();
+</script>
+</body>
+</html>
