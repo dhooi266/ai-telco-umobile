@@ -5,6 +5,8 @@ Co-branded proposal landing page (DAC × U Mobile, `noindex`) by David Hooi, D A
 - Track A · Sales Executives (default) — 8 modules
 - Track B · Sales Leaders (`?track=leaders`) — 9 modules incl. AI for Effective Coaching
 
+Track B includes an AI coaching bot (scripted GROW role-play: Faiz demotivated / Mei Ling defensive / Arjun overconfident → score + AI coaching card), linked as `#B-coach`.
+
 Shared sections: tracks at a glance, design principles, creative AI activities, optional 90-day adoption roadmap.
 
 Live: https://dhooi266.github.io/ai-telco-umobile/

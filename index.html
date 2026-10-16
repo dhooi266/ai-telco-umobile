@@ -494,6 +494,68 @@ footer .flogo img{height:38px;width:auto}
   .rtable td:last-child{padding-bottom:14px}
   .rtable td[data-l]::before{content:attr(data-l);display:block;font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 }
+
+/* AI coaching bot (Track B) */
+.coachsec{background:linear-gradient(180deg,#fff 0%,var(--bg-2) 100%)}
+.coachsim{display:grid;grid-template-columns:300px 1fr;gap:20px;align-items:stretch}
+.cs-side{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.cs-personas{display:grid;gap:8px}
+.cs-p{font:inherit;text-align:left;cursor:pointer;display:flex;gap:12px;align-items:center;border:1.5px solid var(--line);background:#fff;border-radius:14px;padding:10px 12px;transition:.15s}
+.cs-p:hover{border-color:var(--orange)}
+.cs-p b{display:block;font-size:15.5px}
+.cs-p small{display:block;font-size:12.5px;color:var(--muted)}
+.cs-p[aria-pressed="true"]{border-color:#ff7900;background:#fff3e8;box-shadow:0 6px 16px rgba(255,121,0,.15)}
+.coachsim .av{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;background:linear-gradient(140deg,#ff9f45,#d96600)}
+.cs-brief{margin-top:14px;background:var(--bg-2);border-radius:12px;padding:12px 14px}
+.cs-brief .k,.cs-card .k{font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--orange-2);margin:0 0 6px}
+.cs-brief ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--ink);line-height:1.5}
+.cs-grow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:6px;counter-reset:g}
+.cs-grow li{counter-increment:g;text-align:center;font-size:12px;font-weight:700;color:var(--muted);background:var(--bg-2);border-radius:10px;padding:8px 2px;line-height:1.2}
+.cs-grow li::before{content:counter(g);display:block;font-size:15px;font-weight:800;margin-bottom:2px}
+.cs-grow li.now{background:#ff7900;color:#fff}
+.cs-grow li.done{background:#1c1c1e;color:#fff}
+.cs-score{margin-top:14px;display:flex;align-items:baseline;gap:10px;border-top:1px solid var(--line);padding-top:14px}
+.cs-score b{font-size:34px;font-weight:800;color:#ff7900;line-height:1}
+.cs-score span{font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.cs-chat{display:flex;flex-direction:column;background:#1c1c1e;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);min-height:560px}
+.cs-head{display:flex;align-items:center;gap:12px;padding:14px 18px;background:#2a2a2d;color:#fff}
+.cs-head b{display:block;font-size:16px}
+.cs-head small{display:block;font-size:12.5px;color:#ffa24d}
+.cs-reset{margin-left:auto;font:inherit;font-size:13px;font-weight:700;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:6px 14px;cursor:pointer}
+.cs-reset:hover{background:rgba(255,255,255,.2)}
+.cs-log{flex:1;overflow-y:auto;max-height:520px;padding:18px;display:flex;flex-direction:column;gap:10px;scroll-behavior:smooth}
+.cs-m{max-width:82%;padding:11px 14px;border-radius:16px;font-size:15px;line-height:1.5;animation:csin .25s ease}
+@keyframes csin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.cs-m.them{align-self:flex-start;background:#fff;color:#1a1a1a;border-bottom-left-radius:4px}
+.cs-m.me{align-self:flex-end;background:#ff7900;color:#fff;border-bottom-right-radius:4px}
+.cs-m.sys{align-self:center;background:none;color:rgba(255,255,255,.5);font-size:12.5px;padding:2px}
+.cs-m.tip{align-self:stretch;max-width:none;font-size:13.5px;border-radius:12px;border-left:4px solid;background:rgba(255,255,255,.06);color:rgba(255,255,255,.88)}
+.cs-m.tip b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
+.cs-m.tip.g{border-color:#3ecf8e}.cs-m.tip.g b{color:#3ecf8e}
+.cs-m.tip.o{border-color:#ffc247}.cs-m.tip.o b{color:#ffc247}
+.cs-m.tip.p{border-color:#ff6b6b}.cs-m.tip.p b{color:#ff8a8a}
+.cs-m.typing{display:flex;gap:4px;padding:14px 16px}
+.cs-m.typing span{width:7px;height:7px;border-radius:50%;background:#aaa;animation:csdot 1s infinite}
+.cs-m.typing span:nth-child(2){animation-delay:.15s}.cs-m.typing span:nth-child(3){animation-delay:.3s}
+@keyframes csdot{0%,60%,100%{opacity:.3;transform:none}30%{opacity:1;transform:translateY(-3px)}}
+.cs-m.end{align-self:stretch;max-width:none;background:#fff;color:#1a1a1a;border-radius:16px;padding:18px}
+.cs-res{display:flex;gap:16px;align-items:center;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:14px}
+.cs-res>b{font-size:44px;font-weight:800;color:#ff7900;line-height:1}
+.cs-res>b small{font-size:16px;color:var(--muted)}
+.cs-res strong{display:block;font-size:18px}
+.cs-res span{display:block;font-size:14px;color:var(--muted)}
+.cs-card dl{margin:0;display:grid;grid-template-columns:110px 1fr;gap:6px 12px;font-size:14px}
+.cs-card dt{font-weight:800;color:var(--ink)}
+.cs-card dd{margin:0;color:var(--muted)}
+.cs-opts{padding:14px 18px 18px;border-top:1px solid rgba(255,255,255,.1);display:grid;gap:8px;min-height:60px}
+.cs-ask{margin:0 0 2px;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.cs-ask b{color:#ffa24d}
+.cs-o{font:inherit;font-size:14.5px;text-align:left;cursor:pointer;color:#fff;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.18);border-radius:12px;padding:11px 14px;line-height:1.45;transition:.15s}
+.cs-o:hover{border-color:#ff7900;background:rgba(255,121,0,.14)}
+.cs-again{display:flex;gap:10px;flex-wrap:wrap}
+.cs-again .cs-next{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.25)}
+@media (max-width:960px){.coachsim{grid-template-columns:1fr}.cs-chat{min-height:480px}}
+@media (max-width:640px){.cs-m{max-width:92%}.cs-card dl{grid-template-columns:1fr}.cs-log{max-height:460px;padding:14px}.cs-opts{padding:12px}}
 </style>
 </head>
 <body>
@@ -754,7 +816,7 @@ footer .flogo img{height:38px;width:auto}
       <p class="lead">Sales managers and senior managers learn to use Generative AI to manage team performance more accurately. They consolidate salesperson, dealer and territory reports into one clear view, forecast where the month will land, coach each salesperson with evidence — and run an AI-supported weekly review that keeps the whole team using AI after the training.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="https://wa.me/60184043913" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp David</a>
-        <a class="btn btn-ghost" href="#B-lab">Try the prompt formula</a>
+        <a class="btn btn-ghost" href="#B-coach">Try the AI coaching bot</a>
       </div>
       <div class="hero-tags">
         <span class="um-tag">Tailored for U Mobile</span>
@@ -867,6 +929,36 @@ footer .flogo img{height:38px;width:auto}
   </div>
 </section>
 
+<section class="sec coachsec" id="B-coach">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">AI coaching bot · Module 8 preview</span>
+      <h2 style="margin-top:14px">Practise the tough one-to-one before it happens</h2>
+      <p>In Module 8, AI plays a demotivated, defensive or overconfident salesperson so leaders can rehearse. Pick a salesperson, then coach them through the four GROW steps — Goal, Reality, Options, Way forward. Choose your reply at each step and see how they react.</p>
+    </div>
+    <div class="coachsim">
+      <aside class="cs-side">
+        <p class="rf-q">1 · Who are you coaching?</p>
+        <div class="cs-personas" role="group" aria-label="Salesperson">
+          <button type="button" class="cs-p" data-p="faiz" aria-pressed="true"><span class="av">F</span><span><b>Faiz</b><small>Demotivated · 71% to target</small></span></button>
+          <button type="button" class="cs-p" data-p="mei" aria-pressed="false"><span class="av">M</span><span><b>Mei Ling</b><small>Defensive · 76% to target</small></span></button>
+          <button type="button" class="cs-p" data-p="arjun" aria-pressed="false"><span class="av">A</span><span><b>Arjun</b><small>Overconfident · 98% to target</small></span></button>
+        </div>
+        <div class="cs-brief" id="csBrief"></div>
+        <p class="rf-q" style="margin-top:18px">2 · GROW progress</p>
+        <ol class="cs-grow" id="csGrow"><li>Goal</li><li>Reality</li><li>Options</li><li>Way forward</li></ol>
+        <div class="cs-score" id="csScore" aria-live="polite"><b>0</b><span>coaching score</span></div>
+      </aside>
+      <div class="cs-chat">
+        <div class="cs-head"><span class="av" id="csAv">F</span><div><b id="csName">Faiz</b><small id="csMood">AI role-play · demotivated salesperson</small></div><button type="button" class="cs-reset" id="csReset">Restart</button></div>
+        <div class="cs-log" id="csLog" aria-live="polite"></div>
+        <div class="cs-opts" id="csOpts"></div>
+      </div>
+    </div>
+    <p class="where-n">A scripted preview with synthetic people and figures. In class, leaders run the same role-play in free conversation with a real AI chat app, then get peer feedback.</p>
+  </div>
+</section>
+
 <section class="sec">
   <div class="wrap">
     <div class="night">
@@ -929,7 +1021,7 @@ footer .flogo img{height:38px;width:auto}
         <div class="mb"><ul><li>Ask AI to draw a team dashboard from the report with one prompt — by salesperson, territory and dealer</li><li>KPI cards, trend views and leaderboards</li><li>An AI adoption tracker: who is using AI and what it changed</li><li>From dashboard to decision: coaching, reallocation and focus actions</li></ul>
         <p class="ex"><b>Exercise:</b> build a team dashboard and present three decisions it supports. <b>Creative AI:</b> a 30-second team update video (Canva, HeyGen).</p></div></details>
       <details class="mod"><summary><span class="mn">M8</span><span class="mt"><small>2:00 – 3:15 · New</small><strong>AI for Effective Coaching</strong></span><span class="chev" aria-hidden="true"></span></summary>
-        <div class="mb"><ul><li>From dashboard to coaching: pick who to coach this week and on what</li><li>One-page <b>AI coaching card</b> per salesperson: recent wins, biggest gap, one focus area, three questions to ask</li><li>A simple coaching flow (<b>GROW</b> made easy): goal, current reality, options, next step</li><li>Ask AI for good coaching questions, not ready-made answers</li><li>Practise with AI playing a demotivated, defensive or overconfident salesperson</li><li>Balanced feedback in your own words; an AI coaching log of progress over the weeks</li><li>Coach your team to use AI themselves, linked to the Track A weekly routine</li></ul>
+        <div class="mb"><ul><li>From dashboard to coaching: pick who to coach this week and on what</li><li>One-page <b>AI coaching card</b> per salesperson: recent wins, biggest gap, one focus area, three questions to ask</li><li>A simple coaching flow (<b>GROW</b> made easy): goal, current reality, options, next step</li><li>Ask AI for good coaching questions, not ready-made answers</li><li>Practise with AI playing a demotivated, defensive or overconfident salesperson — <a href="#B-coach">try the coaching bot above</a></li><li>Balanced feedback in your own words; an AI coaching log of progress over the weeks</li><li>Coach your team to use AI themselves, linked to the Track A weekly routine</li></ul>
         <p class="ex"><b>Exercise:</b> prepare a coaching card for one at-risk salesperson, run a 5-minute AI role-play, then get peer feedback.</p></div></details>
       <details class="mod"><summary><span class="mn">M9</span><span class="mt"><small>3:15 – 4:40</small><strong>Leading AI Adoption &amp; the 90-Day Plan</strong></span><span class="chev" aria-hidden="true"></span></summary>
         <div class="mb"><ul><li>Why past programmes fade: engagement without behaviour change</li><li>An AI-supported weekly team review in existing Monday and Thursday meetings</li><li>Reinforcing usage: check-ins, sharing wins, recognising adopters</li><li>Measuring adoption and impact: usage, time saved, KPI movement</li><li>Team use cases: problem, AI solution, data, expected benefit, owner</li><li>90-day roadmap (first month, months 2–3, ongoing) agreed with L&amp;D</li></ul>
@@ -1201,6 +1293,90 @@ footer .flogo img{height:38px;width:auto}
   }
   init('a');init('b');
 
+  /* AI coaching bot (Track B, Module 8): scripted GROW role-play.
+     each stage: three replies — g = great coaching (25), o = okay (12), p = poor (0) */
+  var CS={
+    faiz:{name:"Faiz",mood:"demotivated salesperson",brief:["71% to target, 12 of 22 selling days gone","3 top dealers in Territory B down 20%+","Win: opened 2 new dealers this month"],
+      open:"Boss, you wanted to see me? I know my numbers are bad this month… 71%. I'm trying, but nothing seems to work in Territory B.",
+      st:[
+        {g:["Thanks for coming in, Faiz. Before we look at numbers — what would a good end to this month look like for you?","Honestly… getting back above 85% and not feeling like I'm drowning. If my top three dealers came back, I'd get there.","Goal — an open question lets him set his own target. Ownership starts here."],
+         o:["Our target is 90% by month-end. Can you commit to that?","…I'll try, boss.","You set the goal for him. He agreed, but with no ownership. Ask what he wants to achieve."],
+         p:["71% isn't acceptable. What's going on?","I know, I know. I'm doing my best. Maybe I'm just not good at this.","Opening with judgement pushes a demotivated person further down. Start with the goal, not the blame."]},
+        {g:["Let's look at the report together. Your top three dealers are down over 20%. What have you noticed when you visit them?","Kedai Ah Seng keeps running out of starter packs, and Mega Phone says a competitor reload promo is pulling customers. I didn't connect the two until now.","Reality — you used the data as a shared fact, then asked for his observations. He found the causes himself."],
+         o:["What do you think the problem is?","Everything? The market is just tough right now.","Open, but too broad for someone feeling low. Anchor reality in one or two specific numbers."],
+         p:["The data says you visited Mega Phone only once this month. That's the problem.","I had admin to finish… okay, it's my fault.","Accurate data used as an accusation. Present data as something to explore together."]},
+        {g:["If you could change one thing at those three dealers this week, what options do you have?","I could fix the stock at Kedai Ah Seng first — that's quick. Show Mega Phone our reload bonus. And use AI to rank my visits so I stop wasting trips.","Options — he generated three ideas. Your job is to ask, not to supply."],
+         o:["Have you thought about using the reload bonus at Mega Phone?","Oh… yes, I could do that.","A good idea — but it's yours, not his. Suggest only after he has offered his own options."],
+         p:["Here's what you'll do: visit all three dealers tomorrow and send me a report every evening.","Okay boss. (sighs)","Telling and micromanaging remove ownership exactly when he needs confidence."]},
+        {g:["Which of those will you do first, by when — and how can I help?","Kedai Ah Seng restock on Monday, Mega Phone reload-bonus visit on Tuesday. Could you help me get stock priority from the warehouse?","Way forward — specific actions, dates and support offered. Agree a Thursday check-in to close the loop."],
+         o:["Great, so you'll fix it this week, right?","Yes, this week.","Commitment without specifics is easy to miss. Ask what, when and what support he needs."],
+         p:["Good. I expect 90% by Friday.","…Okay.","An imposed, unrealistic deadline ends the session on pressure, not a plan."]}],
+      card:{win:"Opened 2 new dealers this month",gap:"Top 3 Territory B dealers down 20%+ (stock-outs, competitor reload promo)",focus:"Recover the top 3 dealers before adding new ones",next:"Restock Kedai Ah Seng (Mon) · reload-bonus visit to Mega Phone (Tue) · manager to request stock priority"}},
+    mei:{name:"Mei Ling",mood:"defensive salesperson",brief:["76% to target in Territory C","2 delayed stock deliveries flagged by AI","No new dealers opened for 2 weeks"],
+      open:"If this is about my 76%, it's not me. Territory C has the toughest dealers and the warehouse keeps delaying my stock.",
+      st:[
+        {g:["I hear you — and I'm not here to blame anyone. What would you like Territory C to look like by month-end?","…Fair enough. I'd like to be at 90% and have at least two new dealers active.","Acknowledging the frustration lowers her defences; the goal question then moves her forward."],
+         o:["Let's not focus on excuses. What's your target?","90%. Same as everyone.","Labelling her concerns as excuses keeps the defences up."],
+         p:["Other people manage tough territories. Why can't you?","Because they don't have my dealers! This is so unfair.","Comparing her with others is the fastest way to escalate defensiveness."]},
+        {g:["Let's check the stock point together. The report shows 2 delayed deliveries — and also no new dealers for 2 weeks. What's behind each?","The delays are real. But… I've been avoiding new-dealer visits because the last two said no. I guess that part's on me.","Reality — validating the real issue (stock) made it safe for her to admit the other one."],
+         o:["Is the stock really the main reason?","Yes. Mostly.","A yes/no question invites a defensive 'yes'. Use the data and an open question."],
+         p:["Stock is an excuse. You haven't opened a new dealer in two weeks.","So now you're tracking everything I do?","Dismissing a real problem makes her defend everything."]},
+        {g:["What could you try with new dealers that's different from last time?","Maybe bring a one-page offer with results from similar dealers — AI could draft it. And I'll escalate the stock delays in writing.","Options — she's now solving both problems. Ideas come faster once defences are down."],
+         o:["Do you want me to come with you on a new-dealer visit?","Maybe… if you think I need it.","Support is good, but offered too early it can feel like a judgement. Ask for her ideas first."],
+         p:["Just do more cold visits. It's a numbers game.","Fine.","A ready-made answer she already disagrees with gets compliance, not commitment."]},
+        {g:["Which will you start with — and what should I do about the stock escalation?","Two new-dealer visits on Wednesday with the AI one-pager. Can you copy the warehouse head on my escalation?","Way forward — a clear next step, and you took ownership of the part she can't control."],
+         o:["So you'll try harder next week?","Sure.","'Try harder' isn't an action. Agree what, when and how you'll check."],
+         p:["From now on I'll review your numbers every day.","Okay.","Surveillance ends the conversation with less trust than it started."]}],
+      card:{win:"Honest about what's in her control; strong existing dealer relationships",gap:"No new dealers in 2 weeks; 2 delayed stock deliveries",focus:"Restart new-dealer visits with a stronger offer",next:"2 new-dealer visits (Wed) with an AI-drafted one-pager · manager copies warehouse head on escalation"}},
+    arjun:{name:"Arjun",mood:"overconfident salesperson",brief:["98% to target — top of the team","Ria Telco = 40% of his volume","Rarely updates visit notes or uses the tracker"],
+      open:"98% to target, boss! Top of the team again. Honestly, I don't think I need coaching — maybe Faiz does.",
+      st:[
+        {g:["Great result, Arjun — well done. Where do you want to be by the end of the quarter, beyond this month?","Hmm. Top of the region, maybe 110%. I haven't really thought past this month.","Goal — recognise first, then stretch. High performers need a bigger goal, not just a pat on the back."],
+         o:["Good job. Keep it up.","Will do!","Praise alone ends the coaching. Add a goal question that stretches him."],
+         p:["Don't get too comfortable — you could lose it next month.","Why? I'm the best in the team.","A warning without data sounds like envy, not coaching."]},
+        {g:["Let's look at what's behind the 98%. The report shows Ria Telco is 40% of your volume. What happens if they slow down?","…I'd drop to around 70%. I hadn't seen it that way.","Reality — the data does the challenging for you. Ask him to interpret the risk."],
+         o:["Are there any risks you can see?","Not really. My dealers love me.","Overconfident people need specific data before they can see risk."],
+         p:["You're relying on one dealer. That's lazy selling.","Lazy? I'm at 98%!","The insight is right, the label is wrong. He'll defend instead of reflect."]},
+        {g:["How could you grow the rest of your portfolio so you're not dependent on one dealer?","I could use AI to find my three dealers with the most growth potential — and show Faiz how I work Ria Telco. That would help us both.","Options — he's thinking about growth and the team. Great coaching for a top performer."],
+         o:["Maybe focus more on your smaller dealers?","Okay, maybe.","A useful idea, but he'll own it more if it comes from him."],
+         p:["Spend less time at Ria Telco from now on.","That makes no sense — they're my best dealer.","A rule that hurts his result will simply be ignored."]},
+        {g:["What will you do this week — and how will we know it's working?","Rank my dealers with AI on Monday, two growth visits this week, and share my Ria Telco playbook in Thursday's meeting. Measure: Ria Telco under 30% of my volume by quarter-end.","Way forward — specific actions plus a measure he set himself. Agree the check-in date."],
+         o:["So you'll diversify, yes?","Yes, boss.","Agreement without a plan. Ask what, when and how you'll measure it."],
+         p:["I'm setting you 120% next month to keep you challenged.","Okay…","An imposed stretch target without a plan rarely motivates."]}],
+      card:{win:"98% to target — top of the team",gap:"40% of volume depends on one dealer (Ria Telco)",focus:"Diversify the portfolio and share best practice",next:"AI dealer ranking (Mon) · 2 growth visits · share Ria Telco playbook on Thursday · Ria Telco under 30% by quarter-end"}}
+  };
+  var csLog=document.getElementById('csLog'),csOpts=document.getElementById('csOpts'),csP='faiz',csStage=0,csPts=0,csPath=[],csBusy=false;
+  function csEsc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+  function csMsg(cls,html){var d=document.createElement('div');d.className='cs-m '+cls;d.innerHTML=html;csLog.appendChild(d);csLog.scrollTop=csLog.scrollHeight;return d}
+  function csSay(text,then){var t=csMsg('them typing','<span></span><span></span><span></span>');csBusy=true;
+    setTimeout(function(){t.className='cs-m them';t.textContent=text;csLog.scrollTop=csLog.scrollHeight;csBusy=false;if(then)then()},650+Math.min(text.length*8,900))}
+  function csGrow(){document.querySelectorAll('#csGrow li').forEach(function(li,i){li.className=i<csStage?'done':i===csStage?'now':''});
+    document.querySelector('#csScore b').textContent=csPts}
+  function csOptions(){var s=CS[csP].st[csStage],keys=[['g','o','p'],['o','p','g'],['p','g','o'],['o','g','p']][csStage];
+    csOpts.innerHTML='<p class="cs-ask">Your reply — <b>'+['Goal','Reality','Options','Way forward'][csStage]+'</b></p>'+keys.map(function(k){return '<button type="button" class="cs-o" data-k="'+k+'">'+csEsc(s[k][0])+'</button>'}).join('');
+    csOpts.querySelectorAll('.cs-o').forEach(function(b){b.addEventListener('click',function(){if(!csBusy)csPick(b.dataset.k)})})}
+  function csPick(k){var s=CS[csP].st[csStage][k];csOpts.innerHTML='';
+    csMsg('me',csEsc(s[0]));csPts+=k==='g'?25:k==='o'?12:0;csPath.push(k);
+    csSay(s[1],function(){
+      csMsg('tip '+k,'<b>'+(k==='g'?'Great coaching':k==='o'?'Okay — could be stronger':'Coach\'s note')+'</b> '+csEsc(s[2]));
+      csStage++;csGrow();
+      if(csStage<4)csOptions();else csEnd()})}
+  function csEnd(){var c=CS[csP].card,lvl=csPts>=85?['Coaching champion','You asked, listened and let them own the plan.']:csPts>=50?['Good coach — sharpen your questions','Swap the telling for open questions and the plan becomes theirs.']:['Telling, not coaching','Try again with open GROW questions — notice how the salesperson changes.'];
+    var agreed=csPath[3]==='g';
+    csMsg('end','<div class="cs-res"><b>'+csPts+'<small>/100</small></b><div><strong>'+lvl[0]+'</strong><span>'+lvl[1]+'</span></div></div>'+
+      '<div class="cs-card"><p class="k">AI coaching card · '+csEsc(CS[csP].name)+'</p><dl><dt>Recent win</dt><dd>'+csEsc(c.win)+'</dd><dt>Biggest gap</dt><dd>'+csEsc(c.gap)+'</dd><dt>Focus</dt><dd>'+csEsc(c.focus)+'</dd><dt>Next step</dt><dd>'+(agreed?csEsc(c.next):'Not agreed yet — revisit at the next one-to-one')+'</dd></dl></div>');
+    csOpts.innerHTML='<div class="cs-again"><button type="button" class="btn btn-primary" id="csAgain">Coach '+csEsc(CS[csP].name)+' again</button><button type="button" class="btn cs-next" id="csNext">Try another salesperson</button></div>';
+    document.getElementById('csAgain').onclick=function(){csStart(csP)};
+    document.getElementById('csNext').onclick=function(){var ks=Object.keys(CS);csStart(ks[(ks.indexOf(csP)+1)%ks.length])}}
+  function csStart(p){csP=p;csStage=0;csPts=0;csPath=[];csLog.innerHTML='';csOpts.innerHTML='';var d=CS[p];
+    document.querySelectorAll('.cs-p').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.p===p)});
+    document.getElementById('csAv').textContent=d.name[0];document.getElementById('csName').textContent=d.name;document.getElementById('csMood').textContent='AI role-play · '+d.mood;
+    document.getElementById('csBrief').innerHTML='<p class="k">From this week\'s team dashboard</p><ul>'+d.brief.map(function(b){return '<li>'+csEsc(b)+'</li>'}).join('')+'</ul>';
+    csGrow();csMsg('sys','One-to-one with '+csEsc(d.name)+' · Thursday 10:00');csSay(d.open,csOptions)}
+  document.querySelectorAll('.cs-p').forEach(function(b){b.addEventListener('click',function(){if(!csBusy)csStart(b.dataset.p)})});
+  document.getElementById('csReset').addEventListener('click',function(){if(!csBusy)csStart(csP)});
+  csStart('faiz');
+
   /* track switcher */
   var sw=document.querySelectorAll('.pswitch button');
   function showProg(key,scroll){
@@ -1216,7 +1392,7 @@ footer .flogo img{height:38px;width:auto}
   var sp=new URLSearchParams(location.search),t=(sp.get('track')||sp.get('p')||'').toLowerCase();
   showProg(/^(b|leaders?|lead)$/.test(t)?'b':'a',false);
 
-  var els=document.querySelectorAll(".fact,.tabs,.sec-head,.q,.lab,.night,.dl li,.imp,.step,.mix,.t-photo,.creds,.brands .box,.cta h2,.toolwall,.pp,.act,.rtable");
+  var els=document.querySelectorAll(".fact,.tabs,.sec-head,.q,.lab,.night,.dl li,.imp,.step,.mix,.t-photo,.creds,.brands .box,.cta h2,.toolwall,.pp,.act,.rtable,.coachsim");
   els.forEach(function(e,i){e.classList.add("reveal");e.style.transitionDelay=((i%3)*80)+"ms"});
   if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12});els.forEach(function(e){io.observe(e)})}else{els.forEach(function(e){e.classList.add("in")})}
 })();
